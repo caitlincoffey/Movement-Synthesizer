@@ -1,2 +1,2 @@
-# discrete
-Discrete Final Project Website
+# QEA
+QEA Final Project Website
