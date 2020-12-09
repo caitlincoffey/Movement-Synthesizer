@@ -7,6 +7,11 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 $$ \sum_{n=0}^{i} $$ 
 Latex?
 
+Thoughts from the lecture:
+- Do MLA citations and have perhaps a separate references page. 
+- [1] inline citations, whenever you're taking information from a reference you should use it. Note that inline citations should be at the end of the sentence, like this [1].
+- How to make equations: [stackoverflow](https://stackoverflow.com/questions/26275645/how-to-support-latex-in-github-pages)
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
