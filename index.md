@@ -14,7 +14,9 @@ Inspired by the benefits of both these exercises, our project combines them into
 
 The Movement-Synthesizer captures motion from the x, y, and z coordinates of smartphone accelerometer data. In return, it translates signals from those three axes into individual frequencies audible to the human ear that sound like tuned music chords. This process involves some signal amplifying, frequency 'tuning', and filtering; a more in-depth coverage of the calculations to produce the final product can be found under the 'Explaing the Black Box' section. 
 
-For the purpose of making specific music chords that sound 'pleasing' to the human ear, the x axis has been set up to be the 'base' or the 'root' note. The y and z axes are tuned accordingly to the 'root' note and a randomly selected chord. An increase in acceleration in any axis will result in an increase in frequency in the respective axis of movement. In music terms, this will increase the pitch of the notes being played. To add variance to the pitch of the chords, the user should move frequently and move around in all three directions of motion.
+For the purpose of making specific music chords that sound 'pleasing' to the human ear, the x axis has been set up to be the 'base' or the 'root' note. The y and z axes are tuned accordingly to the 'root' note and a randomly selected chord. This produces chords that sound 'pleasing' to the human ear, like partial major or minor chords, but also allows for some flexibility in pitch for the y and z axes (more information is covered in the 'black box' section below!). Regardless, an increase in acceleration in any axis will result in an increase in frequency in the respective axis of movement. In music terms, this will increase the pitch of the notes being played. Likewise, a decrease in acceleration will result in a decrease in frequency in the respective axes of movement. To add variance to the pitch of the chords, the user should move frequently and move around in all three directions of motion.
+
+We looked at three primary movements to encourage users to move their body as much as they can: shuffling (side-to-side), bumping (front-back), and jumping (up-down).
 
 - TODO include videos of movement, like in Dad Dancing website
 
@@ -24,6 +26,13 @@ For the purpose of making specific music chords that sound 'pleasing' to the hum
 ### Explaining 'The Black Box'
 - Explain Fourier Analysis 
 To help demystify the process of the way our project creates music from accelerometer data, we will walk through our algorithms step-by-step to ensure transparency:
+
+## Example: Tiktok Dance Ale's Sister Did
+
+- Add graphs, add video of movement
+
+This dance involves a lot of movement around all three axes. Notably, however, there are repeated movements in _ directions. There are notable variations in pitch in these directions with a slight variation in pitch in the other direction because of this pattern of movement. You can listen to the music generated below!
+
 
 ## References
 Our references are listed [here](/references). We would also like to thank the QEA teaching team for their help and support throughout this project!
