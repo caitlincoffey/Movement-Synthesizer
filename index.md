@@ -23,9 +23,16 @@ We looked at three primary movements to encourage users to move their body as mu
 - Talk about motion model 
 - Talk about sensors 
 
-### Explaining 'The Black Box'
-- Explain Fourier Analysis 
-To help demystify the process of the way our project creates music from accelerometer data, we will walk through our algorithms step-by-step to ensure transparency:
+### Methods in Detail: Explaining "The Black Box"
+There are four distinct methods that we used to process our input to reach our output. We will walk through them step-by-step to ensure transparency:
+#### Fourier Analysis 
+
+#### Pitch Tuning Algorithm 
+
+#### Chord Selection 
+
+#### Playing Back the Music 
+
 
 ## Example: Tiktok Dance Ale's Sister Did
 
@@ -35,7 +42,7 @@ This dance involves a lot of movement around all three axes. Notably, however, t
 
 
 ## References
-Our references are listed [here](/references). We would also like to thank the QEA teaching team for their help and support throughout this project!
+Our references are listed [here](/references). This is not mentioned in our references, but we would like to thank the QEA teaching team for their help and support throughout this project!
 
 <!--- Thoughts from the lecture:
 - Do MLA citations and have perhaps a separate references page. 
