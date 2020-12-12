@@ -2,7 +2,7 @@
 
 Imagine having a new musical instrument from your phone that encourages movement, different dance moves, and a love for experimentation. Our project idea aims to fill this potential hole in people’s lives by taking accelerometer data from a smartphone and manipulating these incoming signals to produce vibrant, unique music relative to the person's movement.
 
-## Why Create Music from Movement?
+# Why Create Music from Movement?
 
 For people who are indoors most or all of the day (either working at home or isolating), one might have heard of the term 'Quarantine Fatigue'. Quarantine fatigue is caused by a reduction in physical activity which affects one's mind \[[1](/Movement-Synthesizer/references)\]. According to the American Heart Association even small bursts of movement are beneficial to one’s health \[[2](/Movement-Synthesizer/references)\]. By having the collection of the information be tied to a smartphone, it allows flexibility on the user’s behalf. End users can collect the data while running, walking, or even standing. 
 
@@ -10,7 +10,7 @@ In addition, even if the music isn’t a Mozart worthy masterpiece, having a low
 
 Inspired by the benefits of both these exercises, our project combines them into an easily accessible smartphone program targetted towards people who are spending more time than usual indoors and sitting down (e.g. students, remote workers).
 
-## How it Works
+# How it Works
 
 The Movement-Synthesizer captures motion from the x, y, and z coordinates of smartphone accelerometer data. In return, it translates signals from those three axes into individual frequencies audible to the human ear that sound like tuned music chords. This process involves some signal amplifying, frequency 'tuning', and filtering; a more in-depth coverage of the calculations to produce the final product can be found under the 'Explaing the Black Box' section. 
 
@@ -23,15 +23,15 @@ We looked at three primary movements to encourage users to move their body as mu
 - Talk about motion model 
 - Talk about sensors 
 
-### Methods in Detail: Explaining "The Black Box"
+## Methods in Detail: Explaining "The Black Box"
 There are four distinct methods that we used to process our input to reach our output. We will walk through them step-by-step to ensure transparency:
-#### Fourier Analysis 
+### Fourier Analysis 
 
-#### Pitch Tuning Algorithm 
+### Pitch Tuning Algorithm 
 
-#### Chord Selection 
+### Chord Selection 
 
-#### Playing Back the Music 
+### Playing Back the Music 
 
 
 ## Example: Tiktok Dance Ale's Sister Did
@@ -41,7 +41,7 @@ There are four distinct methods that we used to process our input to reach our o
 This dance involves a lot of movement around all three axes. Notably, however, there are repeated movements in _ directions. There are notable variations in pitch in these directions with a slight variation in pitch in the other direction because of this pattern of movement. You can listen to the music generated below!
 
 
-## References
+# References
 Our references are listed [here](/references). This is not mentioned in our references, but we would like to thank the QEA teaching team for their help and support throughout this project!
 
 <!--- Thoughts from the lecture:
