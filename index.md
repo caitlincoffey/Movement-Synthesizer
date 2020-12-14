@@ -14,14 +14,16 @@ Inspired by the benefits of both these exercises, our project combines them into
 
 The Movement-Synthesizer captures motion from the x, y, and z coordinates of smartphone accelerometer data. In return, it translates signals from those three axes into a .wav file of frequencies audible to the human ear that sound like tuned music chords. This process involves some signal amplifying, frequency 'tuning', and filtering using concepts learned in class related to Fourier Transforms. There are other topics covered as well such as music theory from WIRED, a first-year Olin Music course. 
 
+We looked at three primary movements to encourage users to move their body as much as they can: shuffling (side-to-side), bumping (front-back), and jumping (up-down).
+- TODO include videos of movement, like in Dad Dancing website
+- include sounds from movement 
+
 For the purpose of making specific music chords that sound 'pleasing' to the human ear, the x axis has been set up to be the 'base' or the 'root' note. The y and z axes are tuned accordingly to the 'root' note and a randomly selected chord based on some aspect of the root note. This selection produces chords that sound pleasing to the human ear according to a study done at Penn State's Department of Music \[[5](https://sites.psu.edu/siowfa15/2015/09/16/what-makes-chords-sound-good/)\]. On the other hand this also allows for some flexibility in pitch for the y and z axes, as our project goal is to inspire users to create their own unique sounds from experimentation with movement. Regardless, an increase in acceleration in any axis will result in an increase in frequency in the respective axis of movement. In music terms, this will increase the pitch of the notes being played. Likewise, a decrease in acceleration will result in a decrease in frequency in the respective axes of movement. To add variance to the pitch of the chords, the user should move frequently and move around in all three directions of motion.
 
-We looked at three primary movements to encourage users to move their body as much as they can: shuffling (side-to-side), bumping (front-back), and jumping (up-down).
 
-- TODO include videos of movement, like in Dad Dancing website
 
 - Talk about motion model 
-- Talk about sensors 
+- Talk about sound, separate x, y, and z axes into different sound files
 
 ### Signal Manipulation and Fourier Analysis
 
@@ -34,9 +36,9 @@ Explain the rest of the algorithm.
 
 ### Pitch Tuning Algorithm / Chord Selection Algorithm 
 
-We match/tune the frequencies to their equivalent notes on the piano by finding the lowest distance between each frequency of movement and the piano frequencies. 
+To tune each frequency from movement to a respective piano note, the Pitch Tuning algorithm finds the lowest distance between each frequency of movement and the piano frequencies and replaces the frequency from movement with the respective piano note. The lowest distance can be impacted for the y and z axes depending on the chord selected. When these restrictions apply, the piano frequencies that do not line up with the selected chord (e.g the note is not present in that chord) are not considered when finding the lowest distance between the frequencies from movement and the piano frequencies. 
 
-The chord selection is randomized so that the generated music does not sound repetitive. This design decision was made only after experimenting with the chord selection being attached to other variables such as the note of the y axis or z axis; we found that when there was little movement around either axis the generated music played the same three notes repeatedly.
+The chord selection is randomized so that the generated music does not sound repetitive. This design decision was made only after experimenting with the chord selection being attached to other variables such as the note of the y axis or z axis; we found that when there was little movement around either axis the generated music played the same three notes repeatedly, even if the movement pattern was similar to a person walking.
 
 If you want to look more at the music theory behind the Pitch Tuning algorithm and the Chord Selection algorithm, please read more [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
 
@@ -44,12 +46,17 @@ If you want to look more at the music theory behind the Pitch Tuning algorithm a
 ### Playing Back the Music 
 
 
-## Example: Tiktok Dance Ale's Sister Did
+## Example 1: The Renegade Dance (from Tiktok)
 
 - Add graphs, add video of movement
 
 This dance involves a lot of movement around all three axes. Notably, however, there are repeated movements in _ directions. There are notable variations in pitch in these directions with a slight variation in pitch in the other direction because of this pattern of movement. You can listen to the music generated below!
 
+## Example 2: Standing
+
+- Add graphs, add video of movement
+
+Although it might appear to be silly to use this example, standing is technically considered movement. Standing, as mentioned earlier, does provide some benefits to one's health \[[2](/Movement-Synthesizer/references)\]. 
 
 # References
 Our references are listed [here](https://caitlincoffey.github.io/Movement-Synthesizer/references). This is not mentioned in our references, but we would like to thank the QEA teaching team for their help and support throughout this project!
