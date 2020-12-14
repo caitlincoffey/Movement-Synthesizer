@@ -60,7 +60,7 @@ This dance involves a lot of movement around all three axes. Notably, however, t
 
 
 # References
-Our references are listed [here](/references). This is not mentioned in our references, but we would like to thank the QEA teaching team for their help and support throughout this project!
+Our references are listed [here](https://caitlincoffey.github.io/Movement-Synthesizer/references). This is not mentioned in our references, but we would like to thank the QEA teaching team for their help and support throughout this project!
 
 <!--- Thoughts from the lecture:
 - Do MLA citations and have perhaps a separate references page. 
