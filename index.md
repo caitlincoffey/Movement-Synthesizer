@@ -18,18 +18,24 @@ We looked at three primary movements to encourage users to move their body as mu
 - TODO include videos of movement, like in Dad Dancing website
 
 <center><img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/x-axissidetoside.gif" alt="Side to side movement" height="332" width="589">
-  <i>Side to Side Movement on the X Axis Captured from Smartphone Accelerometer Data</i>
+
+<i>Side to Side Movement on the X Axis Captured from Smartphone Accelerometer Data</i>
 <audio controls>
+  
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/x-axissidetoside.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
   
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/y-axisupdown.gif" alt="Up and down movement" height="332" width="589">
+
 <i>Up and Down Movement on the Y Axis Captured from Smartphone Accelerometer Data</i>
 <audio controls> 
+  
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/y-axisupdown.mp3" type="audio/mpeg"></audio> 
 
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/z-axisfrontback.gif" alt="Front to back movement" height="332" width="589">
+
 <i>Front and Back Movement on the Z Axis Captured from Smartphone Accelerometer Data</i>
 <audio controls> 
+  
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/z-axisfrontback.mp3" type="audio/mpeg"></audio>
 </center>
 
