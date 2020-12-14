@@ -17,15 +17,21 @@ The Movement-Synthesizer captures motion from the x, y, and z coordinates of sma
 We looked at three primary movements to encourage users to move their body as much as they can: shuffling (side-to-side), bumping (front-back), and jumping (up-down).
 - TODO include videos of movement, like in Dad Dancing website
 
-<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/x-axissidetoside.gif" alt="Side to side movement" height="332" width="589">
+<center><img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/x-axissidetoside.gif" alt="Side to side movement" height="332" width="589">
+  <i>Side to Side Movement on the X Axis Captured from Smartphone Accelerometer Data</i>
 <audio controls>
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/x-axissidetoside.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
+  
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/y-axisupdown.gif" alt="Up and down movement" height="332" width="589">
+<i>Up and Down Movement on the Y Axis Captured from Smartphone Accelerometer Data</i>
 <audio controls> 
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/y-axisupdown.mp3" type="audio/mpeg"></audio> 
+
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/z-axisfrontback.gif" alt="Front to back movement" height="332" width="589">
+<i>Front and Back Movement on the Z Axis Captured from Smartphone Accelerometer Data</i>
 <audio controls> 
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/z-axisfrontback.mp3" type="audio/mpeg"></audio>
+</center>
 
 For the purpose of making specific music chords that sound 'pleasing' to the human ear, the x axis has been set up to be the 'base' or the 'root' note. The y and z axes are tuned accordingly to the 'root' note and a randomly selected chord based on some aspect of the root note. This selection produces chords that sound pleasing to the human ear according to a study done at Penn State's Department of Music \[[5](https://sites.psu.edu/siowfa15/2015/09/16/what-makes-chords-sound-good/)\]. On the other hand this also allows for some flexibility in pitch for the y and z axes, as our project goal is to inspire users to create their own unique sounds from experimentation with movement. Regardless, an increase in acceleration in any axis will result in an increase in frequency in the respective axis of movement. In music terms, this will increase the pitch of the notes being played. Likewise, a decrease in acceleration will result in a decrease in frequency in the respective axes of movement. To add variance to the pitch of the chords, the user should move frequently and move around in all three directions of motion.
 
