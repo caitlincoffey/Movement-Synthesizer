@@ -56,7 +56,7 @@ We looked at three primary movements to encourage users to move their body as mu
 <br>
 <audio controls> 
   
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/front_back.mp3" type="audio/mpeg"></audio>
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/front_back_all.mp3" type="audio/mpeg"></audio>
 <br>
 
 <i>Music Generated from Side to Side Movement</i>
@@ -92,6 +92,8 @@ If you want to look more at the music theory behind what a chord is and the chor
 
 
 ## Playing Back the Music 
+
+- Talk about and show IFFT
 
 # Examples of Movement
 
