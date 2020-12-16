@@ -30,7 +30,7 @@ If clashing key signatures are present, clashing chords will also be present (an
 To prevent clashing chords, the only room of movement for chords is between two points: one step down or one step up. One step 'up' means that the key signature is becoming sharper, so either a flat will be removed or a sharp will be added. One step down is going in the other direction; one flat will be added or a sharp will be removed. This helps mitigate most of the clashing chords, while it also provides some room for the key signature to expand as staying in one key signature for the entire piece can sound boring at times. The process of selecting between going 'up', 'down', or staying in the same key signature is determined randomly. 
 
 
-## Pitch Tuning Algorithm 
+## The Applications of Music Theory for the Pitch Tuning Algorithm 
 
 The pitch tuning algorithm, as mentioned before, finds the lowest distance between each frequency of movement and the piano frequencies and replaces the frequency from movement with the respective piano note. 
 
@@ -39,7 +39,7 @@ Each piano note is aligned with the 12-tone music scale. For the x axis, the alg
 The lowest distance can be impacted for the y and z axes depending on the chord selected in the chord selection process. When these restrictions apply, the piano frequencies that do not line up with the selected chord (e.g notes that are not present in that chord) are not considered when finding the lowest distance between the frequencies from movement and the piano frequencies. Without the restriction, all chords would never be guaranteed to be produced as the notes would vary too much to produce them every time. It also prevents the possibility of making dissonant chords. 
 
 
-## Chord Selection Process
+## The Applications of Music Theory for the Chord Selection Process
 
 The chord selection is randomized so that the generated music does not sound repetitive. This design decision was made only after experimenting with the chord selection being attached to other variables such as the note of the y axis or z axis; we found that when there was little movement around either axis the generated music played the same three notes repeatedly. 
 
