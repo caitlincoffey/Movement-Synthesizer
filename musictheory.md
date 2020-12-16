@@ -44,7 +44,11 @@ The lowest distance can be impacted for the y and z axes depending on the chord 
 The chord selection is randomized so that the generated music does not sound repetitive. This design decision was made only after experimenting with the chord selection being attached to other variables such as the note of the y axis or z axis; we found that when there was little movement around either axis the generated music played the same three notes repeatedly. 
 
 It selects between six chords: a major chord in the same key signature, a minor chord in the same key signature, a minor chord in the key signature above, a major chord in the key signature above, a minor chord in the key signature below, and a major chord the key signature below. From there, it creates three possible note choices (integers) to select for both the x and y axes. These three integers correspond to the notes needed to produce the selected chord in a modulo 12 Western music system. Here is an example of three possible note choices to form a major chord in the same key signature:
+<br>
+<center>
 `musicnote_limits = [base_note, base_note+4, base_note+7];`
+ </center>
+<br>
 Major chords have three notes: the root, the major third, and the perfect 5th. The root in this case is the base note selected from the x axis. Since 12-tone music (Western music) is a modulo 12 arithmetic system based on 'half tones', major 3rds are represented as 4 'half tones' above the base note, and perfect 5ths are represented as 5 'half tones'. 
 
 The reason why the model is limited to major and minor chords within 1 key signature difference is because other chords (augmented chords, devil's triad) sounded objectively painful when tested on two human ears. Since it is hard to quantify what sounds 'good' or 'bad' with a sample size of two people, our group found research conducted by Pennsylvania State University that showed the majority of people prefer chords that are found in the harmonic series of the base note \[[5](https://sites.psu.edu/siowfa15/2015/09/16/what-makes-chords-sound-good/)\]
