@@ -5,13 +5,51 @@
 ## Selecting Peak Frequencies via Filtering in the Frequency Domain
 
 Insert Figure with subplots A-F Here
-A) <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft.png">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft.png"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft.png">
+
+For each axis: 
+A) 
 
 
-For each axis:
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft.png" height="306" width="389" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft.png" height="306" width="389" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft.png" height="306" width="389">
+
+
+
 -	Selecting start and stop index for duration of dance, and taking an FFT via Matlab's fft function (A). 
+
+B)
+
+
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft fs.png" height="306" width="389" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft fs.png" height="306" width="389" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft fs.png" height="306" width="389">
+
+
 -	Increasing sampling rate to allow potential frequency range occupation of pleasant auditory reception (B).
--	Identify peak positive frequencies using local max positive selection (C), selecting the greatest values (D), and calculating distance from zero, broadening the range of tones and shifting the frequencies into the audible domain, then employing a horizontal reflection (E). 
+
+C)
+
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max.png" height="306" width="389" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max.png" height="306" width="389" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max.png" height="306" width="389">
+
+
+
+-	Identify peak positive frequencies using local max positive selection (C)
+
+D)
+
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected.png" height="306" width="389" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected.png" height="306" width="389" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected.png" height="306" width="389">
+
+
+-Selecting the greatest values (D),
+
+E)
+
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected shifted.png" height="306" width="389" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected shifted.png" height="306" width="389" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected shifted.png" height="306" width="389">
+
+
+-Calculating distance from zero, broadening the range of tones and shifting the frequencies into the audible domain, then employing a horizontal reflection to ensure positive frequencies are mirrored over the Y axis(E).
+
+F)
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected shifted standardized.png" height="306" width="389" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected shifted standardized.png" height="306" width="389" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected shifted standardized.png" height="306" width="389">
+
+
 -	Standardizing the magnitude of the frequency for proper translation of frequency range during audio file writing (F). 
 
 
