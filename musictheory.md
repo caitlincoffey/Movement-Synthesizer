@@ -1,8 +1,10 @@
 # The Music Theory Behind the Project
 
-This project required extensive research into music theory topics covered in courses such as WIRED. **Music theory** is the study of the standards and practices behind both modern and historical music. In the United States and Europe, music is largely based off of a 12-tone scale, where each tone corresponds to a note and either an accidental (sharp or flat) that can slightly change the frequency of the note or no accidental (e.g. a natural note). Since this is the type of music the project is creating and referring to, we will explain some of the concepts of 12-tone music and how it relates to the project.
+This project required extensive research into music theory topics covered in courses such as WIRED. In the United States and Europe, music is largely based off of a 12-tone scale, where each tone corresponds to a note and either an accidental (sharp or flat) that can slightly change the frequency of the note or no accidental (e.g. a natural note). Since this is the type of music the project is creating and referring to, we will explain some of the concepts of 12-tone music and how it relates to the project.
 
 ## Referring to Notes
+
+To first understand the importance of key signatures, it is important to understand the concept of notes in Western music.
 
 There are seven natural notes in Western music, and each one is based off of a letter in the latin alphabet: A, B, C, D, E, F, and G. These notes, combined with accidentals, can map to every single note in Western music by the use of **octaves**. An **octave** is the interval between one musical pitch and another with double its frequency. To denote what octave a note is in, one should use the natural note letter followed by a number (e.g. A4 = 440Hz). 
 
