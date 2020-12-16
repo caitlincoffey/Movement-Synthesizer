@@ -1,3 +1,13 @@
+### Table of Contents
+Here is a consolidation of pages on our website for ease of access.
+1. Algorithm Development
+  - The algorithms and methods used to get our final output from our input data
+2. The Music Theory Behind the Pitch Selection and Chord Selection Algorithms
+  - More detail about the music theory applications of two of our algorithms
+3. References
+  - A list of resources our team referenced when creating this project
+
+
 # About The Project
 
 Imagine having a new musical instrument from your phone that encourages movement, different dance moves, and a love for experimentation. Our project idea aims to fill this potential hole in people’s lives by taking accelerometer data from a smartphone and manipulating these incoming signals to produce vibrant, unique music relative to the person's movement.
