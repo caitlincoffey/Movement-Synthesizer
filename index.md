@@ -29,6 +29,8 @@ We looked at three primary movements to encourage users to move their body as mu
 <i>Music Generated from Side to Side Movement</i>
 
 <br>
+---
+<br>
 
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/y-axisupdown.gif" alt="Up and down movement" height="332" width="589">
 <br>
@@ -43,6 +45,9 @@ We looked at three primary movements to encourage users to move their body as mu
 <i>Music Generated from Side to Side Movement</i>
 
 <br>
+---
+<br>
+
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/z-axisfrontback.gif" alt="Front to back movement" height="332" width="589">
 
 <br>
