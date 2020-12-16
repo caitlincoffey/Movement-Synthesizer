@@ -68,10 +68,14 @@ We looked at three primary movements to encourage users to move their body as mu
 ## Signal Manipulation and Fourier Analysis
 
 ## Selecting Peak Frequencies via Filtering in the Frequency Domain
--	Selecting start and stop index for duration of dance
--	Increasing sampling rate to allow potential frequency range occupation of pleasant auditory reception.
--	Identify peak positive frequencies using max positive selection and calculating distance from zero, broadening the range of tones and shifting the frequencies into the audible domain, then employing a horizontal reflection. 
--	Standardizing the magnitude of the frequency for proper translation of frequency range during audio file writing. 
+
+Insert Figure with subplots A-F Here
+
+For each axis:
+-	Selecting start and stop index for duration of dance, and taking an FFT via Matlab's fft function (A). 
+-	Increasing sampling rate to allow potential frequency range occupation of pleasant auditory reception (B).
+-	Identify peak positive frequencies using local max positive selection (C), selecting the greatest values (D), and calculating distance from zero, broadening the range of tones and shifting the frequencies into the audible domain, then employing a horizontal reflection (E). 
+-	Standardizing the magnitude of the frequency for proper translation of frequency range during audio file writing (F). 
 
 
 ## Pitch Tuning Algorithm / Chord Selection Process
