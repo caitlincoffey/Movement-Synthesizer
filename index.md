@@ -111,7 +111,9 @@ Add Music Here
 
 ## Example 1: The Macarena 
 
-- Add graphs of accelerometer data, FFTs, music, add video of movement
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/macarena.gif">
+
+- Add graphs of accelerometer data, FFTs, music
 
 This dance involves a lot of movement around all three axes. As a result of the combined movement in all three axes, there is a significant amount of variation in pitch in the generated music. You can listen to the music generated below!
 
