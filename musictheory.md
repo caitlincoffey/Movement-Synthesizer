@@ -14,7 +14,7 @@ It is important to keep accidentals in mind, as they come up when talking about 
 
 A **key signature** is the 7 distinct notes that can be played at any given time. In music, the key signature is a vital part of the music and one is always declared at the beginning of the piece. Without a key signature, musicians would have a harder time knowing which notes are assumed to be 'sharp' or 'flat'. 
 
-<img src="https://caitlincofffey.github.io/Movement-Synthesizer/media/fmajorkye.png">
+<img src="https://raw.githubusercontent.com/caitlincoffey/Movement-Synthesizer/gh-pages/media/fmajorkye.png">
 <i>The F Major Key Signature</i>
 
 It shows that there is one note that should always be assumed to be flat, unless otherwise stated via an accidental; this note is B. The key signature tells us that if B ever comes up in the piece, one should always play it flat. The other notes should be treated as natural notes.
