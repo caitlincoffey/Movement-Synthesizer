@@ -12,13 +12,28 @@ It is important to keep accidentals in mind, as they come up when talking about 
 
 ## Key Signatures 
 
+A **key signature** is the 7 distinct notes that can be played at any given time. In music, the key signature is a vital part of the music and one is always declared at the beginning of the piece. Without a key signature, musicians would have a harder time knowing which notes are assumed to be 'sharp' or 'flat'. 
+
+Here is an example of one key signature, F major:
+<img src="">
+
+It shows that there is one note that should always be assumed to be flat, unless otherwise stated via an accidental; this note is B. The key signature tells us that if B ever comes up in the piece, one should always play it flat. The other notes should be treated as natural notes.
+
+The number of notes that should be played flat or sharp depends on the key signature, as is the number of notes that should be played as natural notes. This is important to remember as certain sharp, flat, and natural notes played together produce not-so-good clashing tones. This means certain key signature combinations are more likely clash if played together, like F major and E major.
+
+### Key Signatures and Chords 
+If clashing key signatures are present, clashing chords will also be present (and these do not sound good!). 
+
+To prevent clashing chords, the only room of movement for chords is between two points: one step down or one step up. One step 'up' means that the key signature is becoming sharper, so either a flat will be removed or a sharp will be added. One step down is going in the other direction; one flat will be added or a sharp will be removed. This helps mitigate most of the clashing chords, while it also provides some room for the key signature to expand as staying in one key signature for the entire piece can sound boring at times. The process of selecting between going 'up', 'down', or staying in the same key signature is determined randomly. 
+
+
 
 
 ## Pitch Tuning Algorithm 
 
 
 
-## Chord Selection  Process
+## Chord Selection Process
 
 The chord selection is randomized so that the generated music does not sound repetitive. This design decision was made only after experimenting with the chord selection being attached to other variables such as the note of the y axis or z axis; we found that when there was little movement around either axis the generated music played the same three notes repeatedly. 
 
