@@ -14,7 +14,10 @@ Inspired by the benefits of both these exercises, our project combines them into
 
 The Movement-Synthesizer captures motion from the x, y, and z coordinates of smartphone accelerometer data. In return, it translates signals from those three axes into a .wav file of frequencies audible to the human ear that sound like tuned music chords. This process involves some signal amplifying, frequency 'tuning', and filtering using concepts learned in class related to Fourier Transforms. There are other topics covered as well such as music theory concepts from WIRED, a first-year Olin College course. To learn more about the music theory in our project, click [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
 
-We looked at three primary movements to encourage users to move their body as much as they can: shuffling (side-to-side), bumping (front-back), and jumping (up-down).
+We incorportated information from movement on all three axes to encourage users to move their body as much as they can. As a result, the same movement along different axis sounds different. Just look at the videos and corresponding music below l shuffling (side-to-side), bumping (front-back), and jumping (up-down).
+
+Additionally, to encourage greater periods of movement, we based our total number selection of frequencies so the length of the final song would approximate the length of time spent dancing.
+
 <br>
 <center><img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/x-axissidetoside.gif" alt="Side to side movement" height="332" width="589">
 <br>
