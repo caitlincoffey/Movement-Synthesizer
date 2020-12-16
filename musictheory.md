@@ -6,7 +6,7 @@ This project required extensive research into music theory topics covered in cou
 
 There are seven natural notes in Western music, and each one is based off of a letter in the latin alphabet: A, B, C, D, E, F, and G. These notes, combined with accidentals, can map to every single note in Western music by the use of **octaves**. An **octave** is the interval between one musical pitch and another with double its frequency. To denote what octave a note is in, one should use the natural note letter followed by a number (e.g. A4 = 440Hz). 
 
-If the note contains an accidental (either a sharp or flat), one should include those as well when referring to the note. A sharp note is referred to by a sign similar to the pound sign, /#. One can refer to a flat note with the flat sign, ♭. If this character does not show on the browser, one can substitute the sign with a lowercase b. For example, a G sharp note in the same octave as A4 can be referred to as G\#4. 
+If the note contains an accidental (either a sharp or flat), one should include those as well when referring to the note. A sharp note is referred to by a sign similar to the pound sign, #. One can refer to a flat note with the flat sign, ♭. If this character does not show on the browser, one can substitute the sign with a lowercase b. For example, a G sharp note in the same octave as A4 can be referred to as G\#4. 
 
 It is important to keep accidentals in mind, as they come up when talking about **key signatures**.
 
