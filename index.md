@@ -17,7 +17,7 @@ The Movement-Synthesizer captures motion from the x, y, and z coordinates of sma
 We looked at three primary movements to encourage users to move their body as much as they can: shuffling (side-to-side), bumping (front-back), and jumping (up-down).
 
 <center><img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/x-axissidetoside.gif" alt="Side to side movement" height="332" width="589">
-
+<br>
 <i>Side to Side Movement on the X Axis Captured from Smartphone Accelerometer Data</i>
 
 <br>
@@ -26,14 +26,14 @@ We looked at three primary movements to encourage users to move their body as mu
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/side_to_side_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
   
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/y-axisupdown.gif" alt="Up and down movement" height="332" width="589">
-
+<br>
 <i>Up and Down Movement on the Y Axis Captured from Smartphone Accelerometer Data</i>
 
 <br>
 <audio controls> 
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/up_down_all.mp3" type="audio/mpeg"></audio> 
-
+<br>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/z-axisfrontback.gif" alt="Front to back movement" height="332" width="589">
 
 <i>Front and Back Movement on the Z Axis Captured from Smartphone Accelerometer Data</i>
