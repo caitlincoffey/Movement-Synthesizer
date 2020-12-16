@@ -5,6 +5,8 @@
 ## Selecting Peak Frequencies via Filtering in the Frequency Domain
 
 Insert Figure with subplots A-F Here
+A) <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft.png">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft.png"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft.png">
+
 
 For each axis:
 -	Selecting start and stop index for duration of dance, and taking an FFT via Matlab's fft function (A). 
