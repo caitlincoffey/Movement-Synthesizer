@@ -1,12 +1,12 @@
 ## Table of Contents
 > Here is a consolidation of pages on our website for ease of access.
-> 1. [Algorithm Development](/Movement-Synthesizer/algorithms)
+> - [Algorithm Development](/Movement-Synthesizer/algorithms)
   > - The algorithms and methods used to get our final output from our input data
  
-> 2. [The Music Theory Behind the Pitch Selection and Chord Selection Algorithms](/Movement-Synthesizer/musictheory)
+> - [The Music Theory Behind the Pitch Selection and Chord Selection Algorithms](/Movement-Synthesizer/musictheory)
  > - More detail about the music theory applications of two of our algorithms
   
-> 3. [References](/Movement-Synthesizer/references)
+> - [References](/Movement-Synthesizer/references)
  > - A list of resources our team referenced when creating this project
 
 
@@ -24,11 +24,11 @@ Inspired by the benefits of both these exercises, our project combines them into
 
 # How it Works
 
-The Movement-Synthesizer captures motion from the x, y, and z coordinates of smartphone accelerometer data. In return, it translates signals from those three axes into a .wav file of frequencies audible to the human ear that sound like tuned music chords. This process involves some signal amplifying, frequency 'tuning', and filtering using concepts learned in class related to Fourier Transforms. There are other topics covered as well such as music theory concepts from WIRED, a first-year Olin College course. To learn more about the music theory in our project, click [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
+The Movement-Synthesizer captures acceleration from the x, y, and z axes of smartphone accelerometer data. In return, it translates signals from those three axes into a .wav file of frequencies audible to the human ear that sound like music. This process involves some signal amplifying, frequency 'tuning', and filtering using concepts learned in class related to Fourier Transforms. There are other topics covered as well such as music theory concepts from WIRED, a first-year Olin College course. To learn more about the music theory behind our project, click [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
 
-We incorportated information from movement on all three axes to encourage users to move their body as much as they can. As a result, the same movement along different axis sounds different. Just look at the videos and corresponding music below l shuffling (side-to-side), bumping (front-back), and jumping (up-down).
+We incorportate information from movement along all three axes to encourage users to move their body as much as they can. To encourage variations of movement even further, the same movement along different axes will sound different depending on the axis. This is because of __________. One can look at video and audio files of the shuffling (side-to-side), bumping (front-back), and jumping (up-down) movements to see/hear the difference of each axis of movement!
 
-Additionally, to encourage greater periods of movement, we based our total number selection of frequencies so the length of the final song would approximate the length of time spent dancing.
+Additionally, to encourage greater periods of movement, we based our total number selection of frequencies so the length of the final song would approximate the length of time spent dancing. 
 
 <br>
 <center><img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/x-axissidetoside.gif" alt="Side to side movement" height="332" width="589">
@@ -104,19 +104,8 @@ Although it might appear to be silly to use this example, standing is technicall
 Our references are listed [here](https://caitlincoffey.github.io/Movement-Synthesizer/references). This is not mentioned in our references, but we would like to thank the QEA teaching team for their help and support throughout this project!
 
 <!--- Thoughts from the lecture:
-- Do MLA citations and have perhaps a separate references page. 
-- [1] inline citations, whenever you're taking information from a reference you should use it. Note that inline citations should be at the end of the sentence, like this [1].
 - How to make equations: [stackoverflow](https://stackoverflow.com/questions/26275645/how-to-support-latex-in-github-pages)
 - For graphs, choose distinguishing colors, different line thicknesses.
 - https://docs.google.com/presentation/d/1ZrCd_3JE7x1tYL_IcSek4cTsEc63TjfPzzRDT7T8hRs/edit#slide=id.gb06d338265_0_42
-Value Creation
-The proof-of-concept supports a specific user group(s) in clearly defined ways. The connection between the proof-of-concept and the user group is clear, and based on existing research and/or a strong understanding of particular areas of opportunity.
-This criterion is linked to a Learning Outcome Motion Model
-Your motion model should demonstrated a clear understanding of the dynamics of your motion, the degrees of freedom and their time derivatives, and the important frequencies. You should explain how your model informed your data collection, and what, if any, modifications were made to the model following experimentation.
-This criterion is linked to a Learning Outcome Proof-of-Concept
-The proof-of-concept should include a selection of sensors that are appropriate for the specific application. The experiment(s) should demonstrate some aspect of how the product would work in reality. Next steps for the proof-of-concept (e.g. additional experiments, changes to the design) should be well articulated.
-This criterion is linked to a Learning Outcome Algorithm Development
-The algorithm(s) for data analysis should demonstrate a clear understanding of Fourier analysis, frequency and time domains, and motion model dynamics. The project website should clearly explain the application of the algorithm to the experimental data through the use of appropriate equations and graphics.
-This criterion is linked to a Learning Outcome Overall Presentation and Delivery of Information
-The website is professional and well-organized. The information is clear, easy to understand, and appropriate for the intended audience.
 --->
+
