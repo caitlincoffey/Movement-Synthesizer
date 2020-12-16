@@ -36,6 +36,7 @@ We looked at three primary movements to encourage users to move their body as mu
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/up_down_all.mp3" type="audio/mpeg"></audio> 
 <br>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/z-axisfrontback.gif" alt="Front to back movement" height="332" width="589">
+
 <br>
 <i>Front and Back Movement on the Z Axis Captured from Smartphone Accelerometer Data</i>
 
