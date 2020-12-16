@@ -1,13 +1,13 @@
 ## Table of Contents
 > Here is a consolidation of pages on our website for ease of access.
 > - [Algorithm Development](/Movement-Synthesizer/algorithms)
-  > - The algorithms and methods used to get our final output from our input data
+  >   - The algorithms and methods used to get our final output from our input data
  
 > - [The Music Theory Behind the Pitch Selection and Chord Selection Algorithms](/Movement-Synthesizer/musictheory)
- > - More detail about the music theory applications of two of our algorithms
+ >  - More detail about the music theory applications of two of our algorithms
   
 > - [References](/Movement-Synthesizer/references)
- > - A list of resources our team referenced when creating this project
+ >  - A list of resources our team referenced when creating this project
 
 
 # About The Project
@@ -43,6 +43,8 @@ Additionally, to encourage greater periods of movement, we based our total numbe
 
 <i>Music Generated from Side to Side Movement</i>
 
+Most of this movement is captured on the x axis of the accelerometer. As one can hear, the pitch of the x axis changes over time to allow for a variety of chords in different octaves.
+
 <br>
 ---
 <br>
@@ -50,6 +52,8 @@ Additionally, to encourage greater periods of movement, we based our total numbe
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/y-axisupdown.gif" alt="Up and down movement" height="332" width="589">
 <br>
 <i>Up and Down Movement Captured from Smartphone Accelerometer Data</i>
+
+Most of this movement is captured on the y axis of the accelerometer. As one accelerates up and down, the pitch of the y axis changes significantly over time, allowing more of a variety of frequencies to be heard in comparison to the standing example down below. The pitch here is different from the x axis, which could be attributed to the constant 9.8 m/s^2 experienced from the normal force.
 
 <br>
 <audio controls> 
@@ -67,6 +71,8 @@ Additionally, to encourage greater periods of movement, we based our total numbe
 
 <br>
 <i>Front and Back Movement Captured from Smartphone Accelerometer Data</i>
+
+Most of this movement is captured on the z axis of the accelerometer. Similar to the other examples, the pitch of the z axis variates over time. 
 
 <br>
 <audio controls> 
