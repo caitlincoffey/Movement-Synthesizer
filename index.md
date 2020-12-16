@@ -1,10 +1,10 @@
 ### Table of Contents
 Here is a consolidation of pages on our website for ease of access.
-1. Algorithm Development
+1. [Algorithm Development](/Movement-Synthesizer/algorithms)
   - The algorithms and methods used to get our final output from our input data
-2. The Music Theory Behind the Pitch Selection and Chord Selection Algorithms
+2. [The Music Theory Behind the Pitch Selection and Chord Selection Algorithms](/Movement-Synthesizer/musictheory)
   - More detail about the music theory applications of two of our algorithms
-3. References
+3. [References](/Movement-Synthesizer/references)
   - A list of resources our team referenced when creating this project
 
 
