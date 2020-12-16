@@ -4,10 +4,10 @@
   >   - The algorithms and methods used to get our final output from our input data
  
 > - [The Music Theory Behind the Pitch Selection and Chord Selection Algorithms](/Movement-Synthesizer/musictheory)
- >  - More detail about the music theory applications of two of our algorithms
+ >    - More detail about the music theory applications of two of our algorithms
   
 > - [References](/Movement-Synthesizer/references)
- >  - A list of resources our team referenced when creating this project
+ >    - A list of resources our team referenced when creating this project
 
 
 # About The Project
@@ -24,7 +24,14 @@ Inspired by the benefits of both these exercises, our project combines them into
 
 # How it Works
 
-The Movement-Synthesizer captures acceleration from the x, y, and z axes of smartphone accelerometer data. In return, it translates signals from those three axes into a .wav file of frequencies audible to the human ear that sound like music. This process involves some signal amplifying, frequency 'tuning', and filtering using concepts learned in class related to Fourier Transforms. There are other topics covered as well such as music theory concepts from WIRED, a first-year Olin College course. To learn more about the music theory behind our project, click [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
+The Movement-Synthesizer captures acceleration from the x, y, and z axes of smartphone accelerometer data. It does so using Matlab's Sensor Data Collection App and by loading that data into a livescript on Matlab's Desktop version. In the future, this could be made into a smartphone app. 
+<br>
+<center>
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/accelerometer_image.png">
+</center>
+<br>
+
+After capturing the accelerometer data, it translates signals from the three axes into a .wav file of frequencies audible to the human ear that sound like music. This process involves some signal amplifying, frequency 'tuning', and filtering using concepts learned in class related to Fourier Transforms. There are other topics covered as well such as music theory concepts from WIRED, a first-year Olin College course. To learn more about the music theory behind our project, click [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
 
 We incorportate information from movement along all three axes to encourage users to move their body as much as they can. To encourage variations of movement even further, the same movement along different axes will sound different depending on the axis. This is because of __________. One can look at video and audio files of the shuffling (side-to-side), bumping (front-back), and jumping (up-down) movements to see/hear the difference of each axis of movement!
 
@@ -105,6 +112,16 @@ This dance involves a lot of movement around all three axes. As a result of the 
 Although it might appear to be silly to use this example, standing is technically considered movement. Standing, as mentioned earlier, does provide some benefits to one's health \[[2](/Movement-Synthesizer/references)\]. Standing requires relatively little movement in comparison to the previous example. You can listen to the music generated below!
 
 - Add music
+
+
+# Contributing
+
+As of now, the Movement Synthesizer lives on a Matlab livescript and does not have an immediate path to get the accelerometer data to the livescript. In addition, the livescript runs manually (e.g. it will not run automatically after receiving new data). To make this project more accessible, these are the next steps our team (or you!) can take to achieve our goal: 
+
+- Create a smartphone app (Android + IOS) that gathers accelerometer data and uses the algorithms mentioned in the [Algorithm Development](/Movement-Synthesizer/algorithms) to process the data
+- Test the algorithm on specific patterns of behavior, such as marching
+- Add more complexity to the chord selection process (perhaps using Machine Learning to select chords rather than at random?)
+
 
 # References
 Our references are listed [here](https://caitlincoffey.github.io/Movement-Synthesizer/references). This is not mentioned in our references, but we would like to thank the QEA teaching team for their help and support throughout this project!
