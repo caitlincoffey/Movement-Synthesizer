@@ -14,8 +14,8 @@ It is important to keep accidentals in mind, as they come up when talking about 
 
 A **key signature** is the 7 distinct notes that can be played at any given time. In music, the key signature is a vital part of the music and one is always declared at the beginning of the piece. Without a key signature, musicians would have a harder time knowing which notes are assumed to be 'sharp' or 'flat'. 
 
-Here is an example of one key signature, F major:
-<img src="">
+<img src="https://caitlincofffey.github.io/Movement-Sythesizer/media/fmajorkye.png">
+<i>The F Major Key Signature</i>
 
 It shows that there is one note that should always be assumed to be flat, unless otherwise stated via an accidental; this note is B. The key signature tells us that if B ever comes up in the piece, one should always play it flat. The other notes should be treated as natural notes.
 
@@ -25,8 +25,6 @@ The number of notes that should be played flat or sharp depends on the key signa
 If clashing key signatures are present, clashing chords will also be present (and these do not sound good!). 
 
 To prevent clashing chords, the only room of movement for chords is between two points: one step down or one step up. One step 'up' means that the key signature is becoming sharper, so either a flat will be removed or a sharp will be added. One step down is going in the other direction; one flat will be added or a sharp will be removed. This helps mitigate most of the clashing chords, while it also provides some room for the key signature to expand as staying in one key signature for the entire piece can sound boring at times. The process of selecting between going 'up', 'down', or staying in the same key signature is determined randomly. 
-
-
 
 
 ## Pitch Tuning Algorithm 
