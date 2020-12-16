@@ -15,10 +15,10 @@ Inspired by the benefits of both these exercises, our project combines them into
 The Movement-Synthesizer captures motion from the x, y, and z coordinates of smartphone accelerometer data. In return, it translates signals from those three axes into a .wav file of frequencies audible to the human ear that sound like tuned music chords. This process involves some signal amplifying, frequency 'tuning', and filtering using concepts learned in class related to Fourier Transforms. There are other topics covered as well such as music theory concepts from WIRED, a first-year Olin College course. To learn more about the music theory in our project, click [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
 
 We looked at three primary movements to encourage users to move their body as much as they can: shuffling (side-to-side), bumping (front-back), and jumping (up-down).
-
+<br>
 <center><img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/x-axissidetoside.gif" alt="Side to side movement" height="332" width="589">
 <br>
-<i>Side to Side Movement on the X Axis Captured from Smartphone Accelerometer Data</i>
+<i>Side to Side Movement Captured from Smartphone Accelerometer Data</i>
 
 <br>
 <audio controls>
@@ -26,24 +26,36 @@ We looked at three primary movements to encourage users to move their body as mu
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/side_to_side_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
 <br>
 
+<i>Music Generated from Side to Side Movement</i>
+
+<br>
+
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/y-axisupdown.gif" alt="Up and down movement" height="332" width="589">
 <br>
-<i>Up and Down Movement on the Y Axis Captured from Smartphone Accelerometer Data</i>
+<i>Up and Down Movement Captured from Smartphone Accelerometer Data</i>
 
 <br>
 <audio controls> 
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/up_down_all.mp3" type="audio/mpeg"></audio> 
 <br>
+
+<i>Music Generated from Side to Side Movement</i>
+
+<br>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/z-axisfrontback.gif" alt="Front to back movement" height="332" width="589">
 
 <br>
-<i>Front and Back Movement on the Z Axis Captured from Smartphone Accelerometer Data</i>
+<i>Front and Back Movement Captured from Smartphone Accelerometer Data</i>
 
 <br>
 <audio controls> 
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/front_back.mp3" type="audio/mpeg"></audio>
+<br>
+
+<i>Music Generated from Side to Side Movement</i>
+
 <br>
 </center>
 
