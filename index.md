@@ -15,11 +15,11 @@ Inspired by the benefits of both these exercises, our project combines them into
 The Movement-Synthesizer captures motion from the x, y, and z coordinates of smartphone accelerometer data. In return, it translates signals from those three axes into a .wav file of frequencies audible to the human ear that sound like tuned music chords. This process involves some signal amplifying, frequency 'tuning', and filtering using concepts learned in class related to Fourier Transforms. There are other topics covered as well such as music theory from WIRED, a first-year Olin Music course. 
 
 We looked at three primary movements to encourage users to move their body as much as they can: shuffling (side-to-side), bumping (front-back), and jumping (up-down).
-- TODO include videos of movement, like in Dad Dancing website
 
 <center><img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/x-axissidetoside.gif" alt="Side to side movement" height="332" width="589">
 
 <i>Side to Side Movement on the X Axis Captured from Smartphone Accelerometer Data</i>
+
 <audio controls>
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/x-axissidetoside.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
@@ -27,6 +27,7 @@ We looked at three primary movements to encourage users to move their body as mu
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/y-axisupdown.gif" alt="Up and down movement" height="332" width="589">
 
 <i>Up and Down Movement on the Y Axis Captured from Smartphone Accelerometer Data</i>
+
 <audio controls> 
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/y-axisupdown.mp3" type="audio/mpeg"></audio> 
@@ -34,6 +35,7 @@ We looked at three primary movements to encourage users to move their body as mu
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/z-axisfrontback.gif" alt="Front to back movement" height="332" width="589">
 
 <i>Front and Back Movement on the Z Axis Captured from Smartphone Accelerometer Data</i>
+
 <audio controls> 
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/z-axisfrontback.mp3" type="audio/mpeg"></audio>
@@ -48,11 +50,11 @@ For the purpose of making specific music chords that sound 'pleasing' to the hum
 
 ### Signal Manipulation and Fourier Analysis
 
-Steps
-- First find the peaks (explain how peaks are found)
-  - The number of peaks selected is equal to the number of time dancing * 4
-- Fourier Transform of those peaks...
-Explain the rest of the algorithm.
+Selecting Peak Frequencies via Filtering in the Frequency Domain
+•	Selecting start and stop index for duration of dance
+•	Increasing sampling rate to allow potential frequency range occupation of pleasant auditory reception.
+•	Identify peak positive frequencies using max positive selection and calculating distance from zero, broadening the range of tones and shifting the frequencies into the audible domain, then employing a horizontal reflection. 
+•	Standardizing the magnitude of the frequency for proper translation of frequency range during audio file writing. 
 
 
 ### Pitch Tuning Algorithm / Chord Selection Algorithm 
