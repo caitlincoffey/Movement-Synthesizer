@@ -14,7 +14,7 @@ It is important to keep accidentals in mind, as they come up when talking about 
 
 A **key signature** is the 7 distinct notes that can be played at any given time. In music, the key signature is a vital part of the music and one is always declared at the beginning of the piece. Without a key signature, musicians would have a harder time knowing which notes are assumed to be 'sharp' or 'flat'. 
 
-<img src="https://caitlincofffey.github.io/Movement-Sythesizer/media/fmajorkye.png">
+<img src="https://caitlincofffey.github.io/Movement-Synthesizer/media/fmajorkye.png">
 <i>The F Major Key Signature</i>
 
 It shows that there is one note that should always be assumed to be flat, unless otherwise stated via an accidental; this note is B. The key signature tells us that if B ever comes up in the piece, one should always play it flat. The other notes should be treated as natural notes.
@@ -29,6 +29,11 @@ To prevent clashing chords, the only room of movement for chords is between two 
 
 ## Pitch Tuning Algorithm 
 
+The pitch tuning algorithm, as mentioned before, finds the lowest distance between each frequency of movement and the piano frequencies and replaces the frequency from movement with the respective piano note. 
+
+Each piano note is aligned with the 12-tone music scale. For the x axis, the algorithm always selects between the full range of notes to match the first frequency. From there, the frequencies on the x axis are matched by either the note of the tuned frequency before it (the same key signature), the key signature 1 step up of the tuned frequency before it, or the key signature one step down from the frequency before it. This is to prevent key signatures widly shifting around, preventing most dissonant chords from happening between shifts. Dissonant chords do not sound pleasant to most people according to Pennsylvania State's School of Music study \[[5]\](https://sites.psu.edu/siowfa15/2015/09/16/what-makes-chords-sound-good/), which is why we are avoiding producing dissonant chords.
+
+The lowest distance can be impacted for the y and z axes depending on the chord selected in the chord selection process. When these restrictions apply, the piano frequencies that do not line up with the selected chord (e.g notes that are not present in that chord) are not considered when finding the lowest distance between the frequencies from movement and the piano frequencies. Without the restriction, all chords would never be guaranteed to be produced as the notes would vary too much to produce them every time. It also prevents the possibility of making dissonant chords. 
 
 
 ## Chord Selection Process
@@ -37,16 +42,6 @@ The chord selection is randomized so that the generated music does not sound rep
 
 It selects between four chords: a major chord, a minor chord, a minor chord from the perfect 4th of the base note, and a major chord from the perfect 4th of the base note. After its selection, it will return a vector of three integers to add to the starting index of the selection of piano note frequencies. These three integers correspond to the notes needed to produce the selected chord in a modulo 12 Western music system. 
 
-Here is what each chord sounds like with a concert A4 (440 Hz): 
-- Major chord: 
-<audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
-- Minor chord:
-<audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
-- Minor chord from the perfect 4th interval (inverted such that the base note remains the lowest frequency): 
-<audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
-- Major chord from the perfect 4th interval (inverted such that the base note remains the lowest frequency): 
-<audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
-
-The reason why the model is limited to these four chords is because other chords (augmented chords, devil's triad) sounded objectively painful when tested on two human ears. Since it is hard to quantify what sounds 'good' or 'bad' with a sample size of two people, our group found research conducted by Pennsylvania State University that showed the majority of people prefer chords that are found in the harmonic series of the base note \[[5]\](https://sites.psu.edu/siowfa15/2015/09/16/what-makes-chords-sound-good/)
+The reason why the model is limited to major and minor chords within 1 key signature difference is because other chords (augmented chords, devil's triad) sounded objectively painful when tested on two human ears. Since it is hard to quantify what sounds 'good' or 'bad' with a sample size of two people, our group found research conducted by Pennsylvania State University that showed the majority of people prefer chords that are found in the harmonic series of the base note \[[5]\](https://sites.psu.edu/siowfa15/2015/09/16/what-makes-chords-sound-good/)
 
 Note that the perfect 4th is a misleading yet common term in music theory as it is technically 2.5 'whole tones' above the base frequency. Since 12-tone music (Western music) is a modulo 12 arithmetic system based on 'half tones', perfect 4ths are represented as 5 'half tones'. 
