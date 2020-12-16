@@ -24,7 +24,8 @@ We looked at three primary movements to encourage users to move their body as mu
 <audio controls>
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/side_to_side_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
-  
+<br>
+
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/y-axisupdown.gif" alt="Up and down movement" height="332" width="589">
 <br>
 <i>Up and Down Movement on the Y Axis Captured from Smartphone Accelerometer Data</i>
@@ -35,13 +36,14 @@ We looked at three primary movements to encourage users to move their body as mu
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/up_down_all.mp3" type="audio/mpeg"></audio> 
 <br>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/z-axisfrontback.gif" alt="Front to back movement" height="332" width="589">
-
+<br>
 <i>Front and Back Movement on the Z Axis Captured from Smartphone Accelerometer Data</i>
 
 <br>
 <audio controls> 
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/front_back.mp3" type="audio/mpeg"></audio>
+<br>
 </center>
 
 
