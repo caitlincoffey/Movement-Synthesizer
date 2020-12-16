@@ -73,6 +73,7 @@ If you want to look more at the music theory behind what a chord is and the chor
 
 ## Playing Back the Music 
 
+# Examples of Movement
 
 ## Example 1: The Macarena 
 
