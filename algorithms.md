@@ -1,5 +1,7 @@
 # Algorithm Development 
-We have created an innovative approach towards making our music. First, we sh
+
+We have created an innovative approach towards making our music. First, we select the top peak frequencies, and manipulate them so as to allow for proper matching to tuned music notes. Then the frequencies along the X, Y, and Z axis are matched to notes, the selection of which is limited by our custom algorithm. After the matching of notes, we play the frequencies in order of initial magnitude before standardization, one chord created from the combination of one note from each axis at a time.
+
 
 ## Signal Manipulation and Fourier Analysis
 
@@ -41,6 +43,11 @@ E) Filtered and Shifted FFTs with a broader range of tones, frequencies all in t
 F) Final FFTs before Pitch Tuning Algorithm, where the magnitudes of the frequencies are all set to 100 units for all 3 axes.
 ##
 
+First, the number of chords needed to create a song that lasts approximately as long as the dance was is determined. Each chord is created by using Matlab's `ifft()` function, and will return a signal with the same N number of points as there were used to create the original fft. So the length of one full chord would be N divided by the sampling rate (Fs), or N/Fs. However, that tends to produce tones that are relatively long, creating a boring song. So, when creating our final music, we only use the first fourth of the signal produced by Matlab's `ifft()` function,  
+For the initial filtering of all 3 axis, a similar pattern is followed: first, we take the FFT of the signal using Matlab's `fft()` function (A). We then set the sampling rate (Fs) to be 2,000 Hz (B), as this allows for a frequency range of -1,000 to 1,000 Hz, as the max frequency = Fs/2. This allows for a broad selection of tones, while avoiding some higher, harsher tones, that some listeners have found unpleasant during the development of this product. 
+
+Then, we find all the peak frequencies, defined as a local maxima preceded by a value at least 1 unit less than itself. As the top positive peak frequencies as are needed to have enough chords to create a song that is approximately as long as 
+Then we spread out and shift the frequencies to broaden the range of possible tones, as well as to ensure all of them are in the audible domain. Lastly, the frequencies are mirrored, and the magnitudes standardized, to enable proper translation of frequency range during audiofile writing.
 
 
 -Increasing sampling rate to allow potential frequency range occupation of pleasant auditory reception (B).
