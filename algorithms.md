@@ -50,7 +50,7 @@ For the initial filtering of all 3 axes, a similar pattern is followed: first, w
 
 Then, all the peak frequencies are found, defined as a local maxima preceded by a value at least 1 unit less than itself (C). The top Nc positive peak frequencies are selected, and then mirrored horizontally, to avoid clashing phase shifts caused by not perfectly symmetric FFTs(D).
 
-Then we spread out and shift the frequencies to broaden the range of possible tones, as well as to ensure all of them are in the audible domain. This is done by finding each frequencies' index's distance from the 0 frequency and multiplying the distance by 2 (if the max peak frequency is less than half the max potential frequency) to increase the range of tones. We then increase the distance by 10; which would shift all signals over 25 Hz, 5 Hz above the lower limit of humans' audible range (need source)(E). Lastly, all the magnitudes are standardized, set to 100 unit lengths to enable proper translation of frequency range during audio file writing(F).
+Then we spread out and shift the frequencies to broaden the range of possible tones, as well as to ensure all of them are in the audible domain. This is done by finding each frequencies' index's distance from the 0 frequency and multiplying the distance by 2 (if the max peak frequency is less than half the max potential frequency) to increase the range of tones. We then increase the distance by 10; which would shift all signals over 25 Hz, 5 Hz above the lower limit of humans' audible range \[[3](www.jstor.org/stable/10.1086/665048)\](E). Lastly, all the magnitudes are standardized, set to 100 unit lengths to enable proper translation of frequency range during audio file writing(F).
 
 
 ## Pitch Tuning Algorithm / Chord Selection Process
