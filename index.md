@@ -58,6 +58,7 @@ Additionally, to encourage greater periods of movement, we based our total numbe
 Most of this movement is captured on the x axis of the accelerometer. As one can hear, the pitch of the x axis changes over time to allow for a variety of chords in different octaves.
 
 <br>
+<br>
 ---
 <br>
 
@@ -89,11 +90,6 @@ Most of this movement is captured on the y axis of the accelerometer. As one acc
 <br>
 <br>
 
-Most of this movement is captured on the z axis of the accelerometer. Similar to the other examples, the pitch of the z axis variates over time. 
-
-<br>
-<br>
-
 <audio controls>
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/front_back_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
@@ -101,7 +97,11 @@ Most of this movement is captured on the z axis of the accelerometer. Similar to
 
 <i>Music Generated from Front to Back Movement</i>
 <br>
+<br>
 
+Most of this movement is captured on the z axis of the accelerometer. Similar to the other examples, the pitch of the z axis variates over time. 
+
+<br>
 </center>
 
 
