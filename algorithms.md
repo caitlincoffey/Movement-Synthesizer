@@ -25,7 +25,7 @@ B) FFTs of accelerometer data plotted with the new frequencies corresponding to 
 
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max.png" height="244.8" width="311.2" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max.png" height="244.8" width="311.2" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max.png" height="244.8" width="311.2">
 
-C) Filtered FFTss showing only the local maximum frequencies for all 3 axes. 
+C) Filtered FFTs showing only the local maximum frequencies for all 3 axes. 
 ##
 
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected.png" height="244.8" width="311.2" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected.png" height="244.8" width="311.2" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected.png" height="244.8" width="311.2">
@@ -47,9 +47,9 @@ First, the number of chords needed to create a song that lasts approximately as 
 
 For the initial filtering of all 3 axis, a similar pattern is followed: first, we take the FFT of the signal using Matlab's `fft()` function (A). We then set the sampling rate (Fs) to be 2,000 Hz (B), as this allows for a frequency range of -1,000 to 1,000 Hz, as the `max_frequency = Fs/2`. This allows for a broad selection of tones, while avoiding some higher, harsher tones, that some listeners have found unpleasant during the development of this product. 
 
-Then, all the peak frequencies are found, defined as a local maxima preceded by a value at least 1 unit less than itself (C). The top Nc positive peak frequencies are selected, and mirrored horizontally, to avoid clashing phaseshifts caused by not perfectly symmetric FFTs (D).
+Then, all the peak frequencies are found, defined as a local maxima preceded by a value at least 1 unit less than itself (C). The top Nc positive peak frequencies are selected, and then mirrored horizontally, to avoid clashing phaseshifts caused by not perfectly symmetric FFTs(D).
 
-Then we spread out and shift the frequencies to broaden the range of possible tones, as well as to ensure all of them are in the audible domain. This is done by finding each frequencies' index's distance from the 0 frequency, multiplying the distance by 2 (if the max frequency is less than half the max potential frequency), and increasing the distance by 20(E). Lastly, all the magnitudes are standardized, set to 100 unit lengths to enable proper translation of frequency range during audiofile writing(F).
+Then we spread out and shift the frequencies to broaden the range of possible tones, as well as to ensure all of them are in the audible domain. This is done by finding each frequencies' index's distance from the 0 frequency, multiplying the distance by 2 (if the max peak frequency is less than half the max potential frequency), and increasing the distance by 20(E). Lastly, all the magnitudes are standardized, set to 100 unit lengths to enable proper translation of frequency range during audiofile writing(F).
 
 
 ## Pitch Tuning Algorithm / Chord Selection Process
@@ -62,9 +62,12 @@ To tune each frequency from movement to a respective piano note, the pitch tunin
 
 If you want to look more at the music theory behind the frequencies of Western music and the pitch tuning algorithm, please read more [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
 
+
 ### Chord Selection Process
 
-The process of selecting a chord is randomized so that the generated music does not sound repetitive. This design decision was made only after experimenting with the chord selection being attached to other variables such as the note of the y axis or z axis; we found that when there was little movement around either axis the generated music played the same three notes repeatedly, even if the movement pattern was similar to a person walking.
+The process of selecting a chord is randomized so that the generated music does not sound repetitive. This design decision was made only after experimenting with the chord selection being attached to other variables such as the note of the y axis or z axis; we found that when there was little movement around either axis the generated music played the same three notes repeatedly, even if the movement pattern was similar to a person walking. 
+
+To select a chord, a 
 
 If you want to look more at the music theory behind what a chord is and the chord selection process, please read more [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
 
