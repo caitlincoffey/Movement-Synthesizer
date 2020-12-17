@@ -35,7 +35,11 @@ The Movement-Synthesizer captures acceleration from the x, y, and z axes of smar
 
 After capturing the accelerometer data, it translates signals from the three axes into a .wav file of frequencies audible to the human ear that sound like music. This process involves some signal amplifying, frequency 'tuning', and filtering using concepts learned in class related to Fourier Transforms. There are other topics covered as well such as music theory concepts from WIRED, a first-year Olin College course. To learn more about the music theory behind our project, click [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
 
-We incorportate information from movement along all three axes to encourage users to move their body as much as they can. To encourage variations of movement even further, the same movement along different axes will sound different depending on the axis. This is because of __________. One can look at video and audio files of the shuffling (side-to-side), bumping (front-back), and jumping (up-down) movements to see/hear the difference of each axis of movement!
+
+Due to our filtering algorithm's creating chords out of our x, y, and z axes.
+
+
+We use information from movement along all three axes to encourage users to move their body as much as they can. To encourage variations of movement even further, the same movement along different axes will sound different depending on the axis. This is because of the way the frequencies are tuned in the pitch tuning algorithm, which is explained more in detail on this [page](https://caitlincoffey.github.io/Movement-Synthesizer/algorithms). One can look at video and audio files of the shuffling (side-to-side), bumping (front-back), and jumping (up-down) movements to see/hear the difference of each axis of movement!
 
 Additionally, to encourage greater periods of movement, we based our total number selection of frequencies so the length of the final song would approximate the length of time spent dancing. 
 
