@@ -74,29 +74,35 @@ There are six chords that can be selected at any given time. The process of sele
     <th>Third Option (Perfect 5th)</th>
  </tr>
  <tr>
-    <td>base_note</td>
-    <td>base_note</td>
-    <td>base_note</td>
-    <td>base_note+2</td>
-    <td>base_note+2</td>
-    <td>base_note+4</td>
+   <td>base_note</td>
+   <td>base_note+4</td>
+   <td>base_note+7</td>
   </tr>
   <tr>
-    <td>base_note+4</td>
-    <td>base_note+4</td>
-    <td>base_note+5</td>
-    <td>base_note+5</td>
-    <td>base_note+7</td>
-    <td>base_note+7</td>
+   <td>base_note</td>
+   <td>base_note+4</td>
+   <td>base_note+9</td>
   </tr>
   <tr>
-    <td>base_note+7</td>
-    <td>base_note+9</td>
-    <td>base_note+9</td>
-    <td>base_note+9</td>
-    <td>base_note+11</td>
-    <td>base_note+11</td>
+   <td>base_note</td>
+   <td>base_note+5</td>
+   <td>base_note+9</td>
   </tr>
+ <tr>
+  <td>base_note+2</td>
+  <td>base_note+5</td>
+  <td>base_note+9</td>
+ </tr>
+ <tr>
+  <td>base_note+2</td>
+  <td>base_note+7</td>
+  <td>base_note+11</td>
+  </tr>
+ <tr>
+  <td>base_note+4</td>
+  <td>base_note+7</td>
+  <td>base_note+11</td>
+ </tr>
 </table> 
 
 <i>Table of All Possible Chords</i>
