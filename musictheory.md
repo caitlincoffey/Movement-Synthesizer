@@ -19,7 +19,7 @@ The chord selection is randomized so that the generated music does not sound rep
 
 It selects between six chords: a major chord in the same key signature, a minor chord in the same key signature, a minor chord in the key signature above, a major chord in the key signature above, a minor chord in the key signature below, and a major chord the key signature below. This helps mitigate most dissonant chords, while it also provides some room for the key signature to move around.
 
-Based off the chord selection, there are three possible note choices (integers) to select for both the x and y axes. These three integers correspond to the notes needed to produce the selected chord in the 12-tone Western music scale. Here is an example of three possible note choices to form a major chord in the same key signature: `musicnote_limits = [base_note, base_note+4, base_note+7];`
+Based off the chord selection and the incoming note from the x axis (the base note), there are three possible note choices (integers) to select for both the z and y axes. These three integers correspond to the notes needed to produce the selected chord in the 12-tone Western music scale. Here is an example of three possible note choices to form a major chord in the same key signature: `musicnote_limits = [base_note, base_note+4, base_note+7];`
 
 Major chords have three notes: the root, the major third, and the perfect 5th. The root in this case is the base note selected from the x axis. Since 12-tone music is a modulo 12 arithmetic system based on 'half tones', major 3rds are represented as 4 'half tones' above the base note, and perfect 5ths are represented as 7 'half tones' above the base note.
 
