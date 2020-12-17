@@ -116,12 +116,12 @@ Although it might appear to be silly to use this example, standing is technicall
 
 # Contributing
 
-As of now, the Movement Synthesizer lives on a Matlab livescript and does not have an immediate path to get the accelerometer data to the livescript. In addition, the livescript runs manually (e.g. it will not run automatically after receiving new data). To make this project more accessible, these are the next steps our team (or you!) can take to achieve our goal: 
+As of now, the Movement Synthesizer lives on a Matlab livescript, and there is not an immediate path to get the accelerometer data onto the livescript. Additionally, the livescript runs manually (e.g. it will not run automatically after receiving new data). To make this project more accessible to users, these are the next steps our team (or you!) can take: 
 
 - Create a smartphone app (Android + IOS) that gathers accelerometer data and uses the algorithms mentioned in the [Algorithm Development](/Movement-Synthesizer/algorithms) to process the data
 - Test the algorithm on specific patterns of behavior, such as marching
 - Add more complexity to the chord selection process (perhaps using Machine Learning to select chords rather than at random?)
-
+  - Improving the current design of the chord selection algorithm would help make the music more unique and entertaining than it is right now. As of now, the chords are selected randomly. Modern music does not do this; chords are carefully selected based on at least the 5-10 previous chords. Making a complex algorithm to select the chords (rather than doing so at random) would allow the music to have more rhythm and make more sense. 
 
 # References
 Our references are listed [here](https://caitlincoffey.github.io/Movement-Synthesizer/references). This is not mentioned in our references, but we would like to thank the QEA teaching team for their help and support throughout this project!
