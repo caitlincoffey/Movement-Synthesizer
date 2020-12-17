@@ -121,7 +121,7 @@ If you want to look more at the music theory behind what a chord is and the chor
 
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Music.png" height="306" width="377.5">
 <br>
-The three frequencies played over each time step in the music created by movement during the Macarena dance.
+<i>The three frequencies played over each time step in the music created by movement during the Macarena dance.</i>
 
 <br>
 <audio controls> 
