@@ -120,7 +120,38 @@ If you want to look more at the music theory behind what a chord is and the chor
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Music.png" height="306" width="377.5">
 The three frequencies played over each time step in the music created by movement during the Macarena dance.
 
-Add Music Here
+<br>
+<audio controls> 
+  
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_all.mp3" type="audio/mpeg"></audio> 
+<br>
+<br>
 The final music from the Macarena.
 
-We play the frequencies in order of initial magnitude before standardization, one chord created from the combination of one note from each axis at a time. To create this, for each frequency, we ran Matlab's `ifft()` algorithm, where the symmetric FFT only had a value of 100 for the sole frequency that was be converted into music. To make the music more high tempo, we only strung together the first quarter of the each note being played into one longer progression of notes. We then combined all three axes in a .wav audiofile, with each axis being a different channel.
+<br>
+<audio controls> 
+  
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_x_only.mp3" type="audio/mpeg"></audio> 
+<br>
+<br>
+The music along the X axis for the Macarena.
+
+<br>
+<audio controls> 
+ 
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_y_only.mp3" type="audio/mpeg"></audio> 
+<br>
+<br>
+The music along the Y axis for the Macarena.
+
+<br>
+<audio controls> 
+ 
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_z_only.mp3" type="audio/mpeg"></audio> 
+<br>
+<br>
+The music along the Z axis for the Macarena.
+<br>
+<br>
+
+We played the frequencies in the order of decreasing initial magnitude before standardization, one chord created from the combination of one note from each axis at a time. To create this, for each frequency, we ran Matlab's `ifft()` algorithm, where the symmetric FFT only had a value of 100 for the sole frequency that was be converted into music. To make the music more high tempo, we only strung together the first quarter of the each note being played into one longer progression of notes. We then combined all three axes in a .wav audiofile, with each axis being a different channel.
