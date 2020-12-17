@@ -123,19 +123,21 @@ The three frequencies played over each time step in the music created by movemen
 <br>
 <audio controls> 
   
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_all.mp3" type="audio/mpeg"></audio> 
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_all.mp3" type="audio/mpeg"></audio>
+The final music with all three axes combined from the Macarena.
 <br>
 <br>
-The final music from the Macarena.
 
 <audio controls> 
-  
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_x_only.mp3" type="audio/mpeg"></audio> <audio controls> <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_y_only.mp3" type="audio/mpeg"></audio> <audio controls>
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_z_only.mp3" type="audio/mpeg"></audio> 
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_x_only.mp3" type="audio/mpeg"></audio> The music along the x axis for the Macarena.
 <br>
+
+<audio controls> <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_y_only.mp3" type="audio/mpeg"></audio> The music along the y axis for the Macarena.
 <br>
-The music along the x axis for the Macarena. The music along the y axis for the Macarena. The music along the z axis for the Macarena.
+
+<audio controls>
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_z_only.mp3" type="audio/mpeg"></audio> The music along the z axis for the Macarena.
 <br>
 <br>
 
-We played the frequencies in the order of decreasing initial magnitude before standardization, one chord created from the combination of one note from each axis at a time. To create this, for each frequency we ran MATLAB's `ifft()` algorithm, where the symmetric FFT only had a value of 100 for the sole frequency that was to be converted into music. To make the music higher tempo, only  the first quarter of the each note being played was strung together into one longer progression of notes. The resulting music from all three axes were then combined in a .wav audio file, with each axis being a different channel.
+We played the frequencies in the order of decreasing initial magnitude before standardization, one chord created from the combination of one note from each axis at a time. To create this, for each frequency we ran MATLAB's `ifft()` algorithm, where the symmetric FFT only had a value of 100 for the sole frequency that was to be converted into music. To make the music higher tempo, only  the first quarter of the each note being played was strung together into one longer progression of notes. The resulting music from all three axes was then combined in a .wav audio file, with each axis being a different channel.
