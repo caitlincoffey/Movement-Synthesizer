@@ -45,14 +45,12 @@ Additionally, to encourage greater periods of movement, we based our total numbe
 <center><img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/x-axissidetoside.gif" alt="Side to side movement" height="332" width="589">
 <br>
 <i>Side to Side Movement Captured from Smartphone Accelerometer Data</i>
-
+<br>
 <br>
 <audio controls>
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/side_to_side_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
 <br>
-<br>
-
 <i>Music Generated from Side to Side Movement</i>
 
 <br>
@@ -67,16 +65,17 @@ Most of this movement is captured on the x axis of the accelerometer. As one can
 <br>
 <i>Up and Down Movement Captured from Smartphone Accelerometer Data</i>
 <br>
-Most of this movement is captured on the y axis of the accelerometer. As one accelerates up and down, the pitch of the y axis changes significantly over time, allowing more of a variety of frequencies to be heard in comparison to the standing example down below. The pitch here is different from the x axis, which could be attributed to the constant 9.8 m/s^2 experienced from the normal force.
-
 <br>
-<audio controls> 
+
+<audio controls>
   
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/up_down_all.mp3" type="audio/mpeg"></audio> 
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/up_down_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
+<br>
+<i>Music Generated from Up and Down Movement</i>
 <br>
 <br>
 
-<i>Music Generated from Side to Side Movement</i>
+Most of this movement is captured on the y axis of the accelerometer. As one accelerates up and down, the pitch of the y axis changes significantly over time, allowing more of a variety of frequencies to be heard in comparison to the standing example down below. The pitch here is different from the x axis, which could be attributed to the constant 9.8 m/s^2 experienced from the normal force.
 
 <br>
 <br>
@@ -88,19 +87,21 @@ Most of this movement is captured on the y axis of the accelerometer. As one acc
 <br>
 <i>Front and Back Movement Captured from Smartphone Accelerometer Data</i>
 <br>
+<br>
+
 Most of this movement is captured on the z axis of the accelerometer. Similar to the other examples, the pitch of the z axis variates over time. 
 
 <br>
-<audio controls> 
+<br>
+
+<audio controls>
   
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/front_back_all.mp3" type="audio/mpeg"></audio>
-<br>
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/front_back_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
 <br>
 
-<i>Music Generated from Side to Side Movement</i>
+<i>Music Generated from Front to Back Movement</i>
+<br>
 
-<br>
-<br>
 </center>
 
 
@@ -130,7 +131,7 @@ This dance involves movement around all three axes. As a result of the combined 
 ## Example 2: Standing
 
 <br>
-<center><img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/standing.jpg">
+<center><img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/standing.jpg" height="612" width="332.8">
 <br>
 <i>Standing Movement Captured on the Accelerometer</i>
 <br>
