@@ -1,5 +1,5 @@
 ## Table of Contents
-> Here is a consolidation of pages on our website for ease of access.
+> We have consolidated our other pages here for ease of access.
 > - [Algorithm Development](/Movement-Synthesizer/algorithms)
   >   - The algorithms and methods used to get our final output from our input data
  
@@ -51,8 +51,11 @@ Additionally, to encourage greater periods of movement, we based our total numbe
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/side_to_side_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
 <br>
+<br>
 
 <i>Music Generated from Side to Side Movement</i>
+
+<br>
 <br>
 Most of this movement is captured on the x axis of the accelerometer. As one can hear, the pitch of the x axis changes over time to allow for a variety of chords in different octaves.
 
@@ -71,9 +74,11 @@ Most of this movement is captured on the y axis of the accelerometer. As one acc
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/up_down_all.mp3" type="audio/mpeg"></audio> 
 <br>
+<br>
 
 <i>Music Generated from Side to Side Movement</i>
 
+<br>
 <br>
 ---
 <br>
@@ -90,9 +95,11 @@ Most of this movement is captured on the z axis of the accelerometer. Similar to
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/front_back_all.mp3" type="audio/mpeg"></audio>
 <br>
+<br>
 
 <i>Music Generated from Side to Side Movement</i>
 
+<br>
 <br>
 </center>
 
@@ -110,7 +117,7 @@ Most of this movement is captured on the z axis of the accelerometer. Similar to
 
 This dance involves movement around all three axes. As a result of the combined movement in all three axes, there is a significant amount of variation in pitch in the generated music. You can listen to the music generated below!
 
-<br>
+<center>
 <audio controls>
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
@@ -118,6 +125,7 @@ This dance involves movement around all three axes. As a result of the combined 
 
 <i>Music Generated from the Macarena</i>
 <br>
+</center>
 
 ## Example 2: Standing
 
@@ -131,13 +139,15 @@ This dance involves movement around all three axes. As a result of the combined 
 
 Although it might appear to be silly to use this example, standing is technically considered movement. Standing, as mentioned earlier, does provide some benefits to one's health \[[2](/Movement-Synthesizer/references)\]. Standing requires relatively little movement in comparison to the previous example. You can listen to the music generated below here!
 
-<br>
+<center>
 <audio controls>
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/standing.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
 <br>
 
 <i>Music Generated from Standing</i>
+<br>
+</center>
 <br>
 
 # Contributing
