@@ -2,12 +2,11 @@
 
 We have created an innovative approach towards making our music. First, we select the top peak frequencies, and manipulate them so as to allow for proper matching to tuned music notes. Then the frequencies along the X, Y, and Z axis are matched to notes, the selection of which is limited by our custom algorithm. After the matching of notes, we play the frequencies in order of initial magnitude before standardization, one chord created from the combination of one note from each axis at a time.
 
+Below, these algorithms are explained in greater detail, while visualizing the process through the Macarena dance.
 
 ## Signal Manipulation and Fourier Analysis
 
 ## Selecting Peak Frequencies via Filtering in the Frequency Domain
-
-For each axis:
 
  
 
@@ -59,6 +58,10 @@ Then we spread out and shift the frequencies to broaden the range of possible to
 For the purpose of making specific music chords that sound 'pleasing' to the human ear, the x axis has been set up to be the 'base' or the 'root' note. The y and z axes are tuned accordingly to the 'root' note and a randomly selected chord based on some aspect of the root note. This selection produces chords that sound pleasing to the human ear according to a study done at Penn State's Department of Music \[[5](https://sites.psu.edu/siowfa15/2015/09/16/what-makes-chords-sound-good/)\]. On the other hand this also allows for some flexibility in pitch for the y and z axes, as our project goal is to inspire users to create their own unique sounds from experimentation with movement. Regardless, an increase in acceleration in any axis will result in an increase in frequency in the respective axis of movement. In music terms, this will increase the pitch of the notes being played. Likewise, a decrease in acceleration will result in a decrease in frequency in the respective axes of movement. To add variance to the pitch of the chords, the user should move frequently and move around in all three directions of motion.
 
 To tune each frequency from movement to a respective piano note, the pitch tuning algorithm finds the lowest distance between each frequency of movement and the piano frequencies and replaces the frequency from movement with the respective piano note. The lowest distance can be impacted for the y and z axes depending on the chord selected. When these restrictions apply, the piano frequencies that do not line up with the selected chord (e.g notes that are not present in that chord) are not considered when finding the lowest distance between the frequencies from movement and the piano frequencies. 
+
+For the X axis, the base note is determined by finding the remainder of the index selected for the music note divided by 12 (`mod(music_note_index, 12)`), and setting all values where the base note is 0 to 12, to ensure compatabilty with Matlab's indexing. After an inital base note has been selected, the next frequency is selected by first matching the frequency to the closest octave value of the base note, then allowing it to either remain as is, increase by 5 notes, or decrease by 5 notes.
+
+For the Y and Z axes, the frequencies are matched to the closest value for all octaves of three different notes. Those are determined by the chord selection process below, and are based off of the corresponding X base note.
 
 If you want to look more at the music theory behind the frequencies of Western music and the pitch tuning algorithm, please read more [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
 
@@ -114,9 +117,10 @@ If you want to look more at the music theory behind what a chord is and the chor
 
 ## Playing Back the Music 
 
-Add Frequency Plot Here
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Music.png" height="306" width="377.5">
+The three frequencies played over each time step in the music created by movement during the Macarena dance.
+
 Add Music Here
--  We then play the frequencies in order of initial magnitude before standardization, one chord created from the combination of one note from each axis at a time.
+The final music from the Macarena.
 
-
-
+We play the frequencies in order of initial magnitude before standardization, one chord created from the combination of one note from each axis at a time. To create this, for each frequency, we ran Matlab's `ifft()` algorithm, where the symmetric FFT only had a value of 100 for the sole frequency that was be converted into music. To make the music more high tempo, we only strung together the first quarter of the each note being played into one longer progression of notes. We then combined all three axes in a .wav audiofile, with each axis being a different channel.
