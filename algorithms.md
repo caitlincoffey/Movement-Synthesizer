@@ -1,4 +1,5 @@
 # Algorithm Development 
+We have created an innovative approach towards making our music. First, we sh
 
 ## Signal Manipulation and Fourier Analysis
 
@@ -10,35 +11,43 @@ For each axis:
 
 
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft.png" height="244.8" width="311.2" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft.png" height="244.8" width="311.2"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft.png" hheight="244.8" width="311.2">
+
 A) FFTs of acclerometer data for the X (left), Y (middle), and Z (right) axes. 
 ## 
 
 
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft fs.png" height="244.8" width="311.2" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft fs.png" height="244.8" width="311.2" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft fs.png" height="244.8" width="311.2">
+
 B) FFTs of accelerometer data plotted with the new frequencies corresponding to the increased sampling rate for all 3 axes
 ## 
 
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max.png" height="244.8" width="311.2" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max.png" height="244.8" width="311.2" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max.png" height="244.8" width="311.2">
+
 C) Filtered FFTss showing only the local maximum frequencies for all 3 axes. 
 ##
 
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected.png" height="244.8" width="311.2" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected.png" height="244.8" width="311.2" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected.png" height="244.8" width="311.2">
+
 D) Filtered FFTs showing only the range of highest frequencies selected for music making purposes for all 3 axes.
 ##
 
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected shifted.png" height="244.8" width="311.2">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected shifted.png" height="244.8" width="311.2" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected shifted.png" height="244.8" width="311.2">
+
 E) Filtered and Shifted FFTs with a broader range of tones, frequencies all in the audible range, and the frequencies symmetric for all 3 axes.
 ##
 
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected shifted standardized.png" height="244.8" width="311.2" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected shifted standardized.png" height="244.8" width="311.2" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected shifted standardized.png" height="244.8" width="311.2">
+
 F) Final FFTs before Pitch Tuning Algorithm, where the magnitudes of the frequencies are all set to 100 units for all 3 axes.
 ##
 
--	Standardizing the magnitude of the frequency for proper translation of frequency range during audio file writing (F). 
+
+
 -Increasing sampling rate to allow potential frequency range occupation of pleasant auditory reception (B).
 -	Identify peak positive frequencies using local max positive selection (C)
 -Selecting the greatest values (D),
 -Calculating distance from zero, broadening the range of tones and shifting the frequencies into the audible domain, then employing a horizontal reflection to ensure positive frequencies are mirrored over the Y axis(E).
+-	Standardizing the magnitude of the frequency for proper translation of frequency range during audio file writing (F).
 
 ## Pitch Tuning Algorithm / Chord Selection Process
 
