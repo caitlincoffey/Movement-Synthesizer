@@ -70,27 +70,29 @@ There are six chords that can be selected at any given time. The process of sele
  <table style="width:100%">
   <tr>
     <th>First Option (Base Note)</th>
-    <th>base_note</th>
-    <th>base_note</th>
-    <th>base_note</th>
+    <th>Second Option (Major/Minor 3rd)</th>
+    <th>Third Option (Perfect 5th)</th>
+ </tr>
+ <tr>
+    <td>base_note</td>
+    <td>base_note</td>
+    <td>base_note</td>
     <td>base_note+2</td>
     <td>base_note+2</td>
     <td>base_note+4</td>
   </tr>
   <tr>
-    <td>Second Option (Major/Minor 3rd)</td>
-    <th>base_note+4</th>
-    <th>base_note+4</th>
-    <th>base_note+5</th>
+    <td>base_note+4</td>
+    <td>base_note+4</td>
+    <td>base_note+5</td>
     <td>base_note+5</td>
     <td>base_note+7</td>
     <td>base_note+7</td>
   </tr>
   <tr>
-    <td>Third Option (Perfect 5th)</td>
-    <th>base_note+7</th>
-    <th>base_note+9</th>
-    <th>base_note+9</th>
+    <td>base_note+7</td>
+    <td>base_note+9</td>
+    <td>base_note+9</td>
     <td>base_note+9</td>
     <td>base_note+11</td>
     <td>base_note+11</td>
