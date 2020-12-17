@@ -35,7 +35,7 @@ The Movement-Synthesizer captures acceleration from the x, y, and z axes of smar
 
 After capturing the accelerometer data, it translates signals from the three axes into a .wav file of frequencies audible to the human ear that sound like music. This process involves some signal amplifying, frequency 'tuning', and filtering using concepts learned in class related to Fourier Transforms. There are other topics covered as well such as music theory concepts from WIRED, a first-year Olin College course. To learn more about the music theory behind our project, click [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
 
-We use information from movement along all three axes to encourage users to move their body as much as they can. Furthermore, the more one accelerates in each axis the more the frequencies will vary over time. By moving frequently in all three directions, one can produce songs with more variability in sounds than by sitting still or only using one axis of movement.
+We use information from movement along all three axes to encourage users to move their body as much as they can. Furthermore, the more one accelerates in each axis the more the frequencies will vary over time. By moving frequently in all three directions, one can produce songs with more variability in sounds than by sitting still or only using one axis of movement. Our project looks at all frequencies and all possible types of motion in order to produce songs that capture the amount of variability in motion that is present.
 
 To encourage variations of movement even further, the same movement along different axes will sound different depending on the axis used. This is because of the way the incoming signals are tuned in the pitch tuning algorithm, which is explained more in detail on this [page](https://caitlincoffey.github.io/Movement-Synthesizer/algorithms). One can look at video and audio files of the shuffling (side-to-side), bumping (front-back), and jumping (up-down) movements to see/hear the difference of each axis of movement!
 
@@ -101,21 +101,46 @@ Most of this movement is captured on the z axis of the accelerometer. Similar to
 
 ## Example 1: The Macarena 
 
+<br>
+<center>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/macarena.gif">
+</center>
+<br>
+<i>The Macarena Dance Captured on the Accelerometer</i>
 
-- Add graphs of accelerometer data, FFTs, music
+- Add graphs of accelerometer data, FFTs
 
-This dance involves a lot of movement around all three axes. As a result of the combined movement in all three axes, there is a significant amount of variation in pitch in the generated music. You can listen to the music generated below!
+This dance involves movement around all three axes. As a result of the combined movement in all three axes, there is a significant amount of variation in pitch in the generated music. You can listen to the music generated below!
 
-- Add music
+<br>
+<audio controls>
+  
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
+<br>
+
+<i>Music Generated from the Macarena</i>
+<br>
 
 ## Example 2: Standing
 
-- Add graphs of acccelerometer data, FFTs, music, add video of movement
+<br>
+<center><img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/standing.png">
+<br>
+<i>Standing Movement Captured on the Accelerometer</i>
 
-Although it might appear to be silly to use this example, standing is technically considered movement. Standing, as mentioned earlier, does provide some benefits to one's health \[[2](/Movement-Synthesizer/references)\]. Standing requires relatively little movement in comparison to the previous example. You can listen to the music generated below!
+<br>
 
-- Add music
+
+Although it might appear to be silly to use this example, standing is technically considered movement. Standing, as mentioned earlier, does provide some benefits to one's health \[[2](/Movement-Synthesizer/references)\]. Standing requires relatively little movement in comparison to the previous example. You can listen to the music generated below here!
+
+<br>
+<audio controls>
+  
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/standing.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
+<br>
+
+<i>Music Generated from Standing</i>
+<br>
 
 
 # Contributing
