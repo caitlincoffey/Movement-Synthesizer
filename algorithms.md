@@ -1,6 +1,6 @@
 # Algorithm Development 
 
-We have created an innovative approach towards making our music. First, we select the top peak frequencies, and manipulate them to allow for proper matching to tuned music notes. Then the frequencies along the X, Y, and Z axis are matched to notes, the selection of which is limited by our custom algorithm. After the matching of notes, we play the frequencies in order of initial magnitude before standardization, one chord created from the combination of one note from each axis at a time.
+We have created an innovative approach towards making our music. First, we select the top peak frequencies, and manipulate them to allow for proper matching to tuned music notes. Then the frequencies along the x, y, and z axes are matched to notes, the selection of which is limited by our custom algorithm. After the matching of notes, we play the frequencies in order of initial magnitude before standardization, one chord created from the combination of one note from each axis at a time.
 
 Below, these algorithms are explained in greater detail, while visualizing the process through the Macarena dance.
 
@@ -11,40 +11,40 @@ Below, these algorithms are explained in greater detail, while visualizing the p
  
 
 
-<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft.png" height="244.8" width="311.2" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft.png" height="244.8" width="311.2"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft.png" hheight="244.8" width="311.2">
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft.png" height="222.5454" width="282.909091" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft.png" height="222.5454" width="282.909091"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft.png" height="222.5454" width="282.909091">
 
-A) FFTs of accelerometer data for the X (left), Y (middle), and Z (right) axes. 
+A) FFTs of accelerometer data for the x (left), y (middle), and z (right) axes. 
 ## 
 
 
-<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft fs.png" height="244.8" width="311.2" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft fs.png" height="244.8" width="311.2" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft fs.png" height="244.8" width="311.2">
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft fs.png" height="222.5454" width="282.909091" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft fs.png" height="222.5454" width="282.909091" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft fs.png" height="222.5454" width="282.909091">
 
 B) FFTs of accelerometer data plotted with the new frequencies corresponding to the increased sampling rate for all 3 axes
 ## 
 
-<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max.png" height="244.8" width="311.2" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max.png" height="244.8" width="311.2" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max.png" height="244.8" width="311.2">
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max.png" height="222.5454" width="282.909091" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max.png" height="222.5454" width="282.909091" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max.png" height="222.5454" width="282.909091" >
 
 C) Filtered FFTs showing only the local maximum frequencies for all 3 axes. 
 ##
 
-<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected.png" height="244.8" width="311.2" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected.png" height="244.8" width="311.2" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected.png" height="244.8" width="311.2">
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected.png" height="222.5454" width="282.909091" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected.png" height="222.5454" width="282.909091"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected.png" height="222.5454" width="282.909091">
 
 D) Filtered FFTs showing only the range of highest frequencies selected for music making purposes for all 3 axes.
 ##
 
-<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected shifted.png" height="244.8" width="311.2">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected shifted.png" height="244.8" width="311.2" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected shifted.png" height="244.8" width="311.2">
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected shifted.png" height="222.5454" width="282.909091">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected shifted.png" height="222.5454" width="282.909091" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected shifted.png" height="222.5454" width="282.909091">
 
 E) Filtered and Shifted FFTs with a broader range of tones, frequencies all in the audible range, and the frequencies symmetric for all 3 axes.
 ##
 
-<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected shifted standardized.png" height="244.8" width="311.2" >  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected shifted standardized.png" height="244.8" width="311.2" > <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected shifted standardized.png" height="244.8" width="311.2">
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected shifted standardized.png" height="222.5454" width="282.909091">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected shifted standardized.png" height="222.5454" width="282.909091"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected shifted standardized.png" height="222.5454" width="282.909091">
 
 F) Final FFTs before Pitch Tuning Algorithm, where the magnitudes of the frequencies are all set to 100 units for all 3 axes.
 ##
 
 First, the number of chords needed to create a song that lasts approximately as long as the dance is calculated. Each chord is created by using MATLAB's inverse fast Fourier transform `ifft()` function, and will return a signal with the same N number of points as there were used to create the original fast Fourier transform (FFT). Therefore, the length of one full chord would be N divided by the sampling rate (Fs), or `N / Fs`. However, that tends to produce tones that were longer than we wanted. So, when creating our final music, we only use the first fourth of the signal produced by MATLAB's `ifft()` function. As a result, the length of a single chord would be `4 * N / Fs`. In summary, to create a song approximately the length of the dance (max_time), the number of chords (Nc) would be `Nc = floor(4 * N /(Fs))`, `floor()` rounding down to the nearest integer, as one cannot have part of a chord.
 
-For the initial filtering of all 3 axis, a similar pattern is followed: first, we take the FFT of the signal using MATLAB's `fft()` function (A). We then set the sampling rate (Fs) to be 2,000 Hz (B), as this allows for a frequency range of -1,000 to 1,000 Hz, as the `max_frequency = Fs/2`. This allows for a broad selection of tones, while avoiding some higher, harsher tones, that some listeners have found unpleasant during the development of this product. 
+For the initial filtering of all 3 axes, a similar pattern is followed: first, we take the FFT of the signal using MATLAB's `fft()` function (A). We then set the sampling rate (Fs) to be 2,000 Hz (B), as this allows for a frequency range of -1,000 to 1,000 Hz, as the `max_frequency = Fs/2`. This allows for a broad selection of tones, while avoiding some higher, harsher tones, that some listeners have found unpleasant during the development of this product. 
 
 Then, all the peak frequencies are found, defined as a local maxima preceded by a value at least 1 unit less than itself (C). The top Nc positive peak frequencies are selected, and then mirrored horizontally, to avoid clashing phase shifts caused by not perfectly symmetric FFTs(D).
 
@@ -61,7 +61,7 @@ To tune each frequency from movement to a respective piano note, the pitch tunin
 
 For the X axis, the base note is determined by finding the remainder of the index selected for the music note divided by 12 (`mod(music_note_index, 12)`), and setting all values where the base note is 0 to 12, to ensure compatibility with MATLAB's indexing. After an initial base note has been selected, the next frequency is selected by first matching the frequency to the closest octave value of the base note, then allowing it to either remain as is, increase by 5 notes, or decrease by 5 notes.
 
-For the Y and Z axes, the frequencies are matched to the closest value for all octaves of three different notes. Those are determined by the chord selection process below and are based off of the corresponding X base note.
+For the y and z axes, the frequencies are matched to the closest value for all octaves of three different notes. Those are determined by the chord selection process below and are based off of the corresponding x base note.
 
 If you want to look more at the music theory behind the frequencies of Western music and the pitch tuning algorithm, please read more [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
 
@@ -128,30 +128,14 @@ The three frequencies played over each time step in the music created by movemen
 <br>
 The final music from the Macarena.
 
-<br>
 <audio controls> 
   
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_x_only.mp3" type="audio/mpeg"></audio> 
-<br>
-<br>
-The music along the X axis for the Macarena.
-
-<br>
-<audio controls> 
- 
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_y_only.mp3" type="audio/mpeg"></audio> 
-<br>
-<br>
-The music along the Y axis for the Macarena.
-
-<br>
-<audio controls> 
- 
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_x_only.mp3" type="audio/mpeg"></audio> <audio controls> <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_y_only.mp3" type="audio/mpeg"></audio> <audio controls>
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_z_only.mp3" type="audio/mpeg"></audio> 
 <br>
 <br>
-The music along the Z axis for the Macarena.
+The music along the x axis for the Macarena. The music along the y axis for the Macarena. The music along the z axis for the Macarena.
 <br>
 <br>
 
-We played the frequencies in the order of decreasing initial magnitude before standardization, one chord created from the combination of one note from each axis at a time. To create this, for each frequency, we ran MATLAB's `ifft()` algorithm, where the symmetric FFT only had a value of 100 for the sole frequency that was be converted into music. To make the music more high tempo, we only strung together the first quarter of the each note being played into one longer progression of notes. We then combined all three axes in a .wav audio file, with each axis being a different channel.
+We played the frequencies in the order of decreasing initial magnitude before standardization, one chord created from the combination of one note from each axis at a time. To create this, for each frequency we ran MATLAB's `ifft()` algorithm, where the symmetric FFT only had a value of 100 for the sole frequency that was to be converted into music. To make the music higher tempo, only  the first quarter of the each note being played was strung together into one longer progression of notes. The resulting music from all three axes were then combined in a .wav audio file, with each axis being a different channel.
