@@ -65,9 +65,41 @@ If you want to look more at the music theory behind the frequencies of Western m
 
 ### Chord Selection Process
 
-The process of selecting a chord is randomized so that the generated music does not sound repetitive. This design decision was made only after experimenting with the chord selection being attached to other variables such as the note of the y axis or z axis; we found that when there was little movement around either axis the generated music played the same three notes repeatedly, even if the movement pattern was similar to a person walking. 
+There are six chords that can be selected at any given time. The process of selecting a chord is randomized so that the generated music does not sound repetitive. This design decision was made only after experimenting with the chord selection being attached to other variables such as the note of the y axis or z axis; we found that when there was little movement around either axis the generated music played the same three notes repeatedly, even if the movement pattern was similar to a person walking. 
 
-To select a chord, a 
+ <table style="width:100%">
+  <tr>
+    <th>First Option (Base Note)</th>
+    <th>base_note</th>
+    <th>base_note</th>
+    <th>base_note</th>
+    <td>base_note+2</td>
+    <td>base_note+2</td>
+    <td>base_note+4</td>
+  </tr>
+  <tr>
+    <td>Second Option (Major/Minor 3rd)</td>
+    <th>base_note+4</th>
+    <th>base_note+4</th>
+    <th>base_note+5</th>
+    <td>base_note+5</td>
+    <td>base_note+7</td>
+    <td>base_note+7</td>
+  </tr>
+  <tr>
+    <td>Third Option (Perfect 5th)</td>
+    <th>base_note+7</th>
+    <th>base_note+9</th>
+    <th>base_note+9</th>
+    <td>base_note+9</td>
+    <td>base_note+11</td>
+    <td>base_note+11</td>
+  </tr>
+</table> 
+
+<i>Table of All Possible Chords</i>
+
+Based off the chord selected at random and the incoming frequency from the x axis, there are three possible note choices (integers) to select for both the y and z axes. These three integers correspond to the notes needed to produce the selected chord in the 12-tone Western music scale. 
 
 If you want to look more at the music theory behind what a chord is and the chord selection process, please read more [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
 
