@@ -43,20 +43,14 @@ E) Filtered and Shifted FFTs with a broader range of tones, frequencies all in t
 F) Final FFTs before Pitch Tuning Algorithm, where the magnitudes of the frequencies are all set to 100 units for all 3 axes.
 ##
 
-First, the number of chords needed to create a song that lasts approximately as long as the dance was is determined. Each chord is created by using Matlab's `ifft()` function, and will return a signal with the same N number of points as there were used to create the original fft. So the length of one full chord would be N divided by the sampling rate (Fs), or `N / Fs`. However, that tends to produce tones that were longer than we wanted. So, when creating our final music, we only use the first fourth of the signal produced by Matlab's `ifft()` function. As a result, the length of a single chord would be `4 * N / Fs`. As a result, to create a song approximately the length of the dance (max_time), the number of chords(Nc) would be `Nc = floor(4 * N /(Fs))`, `floor()` rounding down to the nearsest integer, as one cannot have part of a chord.
+First, the number of chords needed to create a song that lasts approximately as long as the dance was is determined. Each chord is created by using Matlab's inverse fast fourier transform `ifft()` function, and will return a signal with the same N number of points as there were used to create the original fast fourier transform (FFT). So the length of one full chord would be N divided by the sampling rate (Fs), or `N / Fs`. However, that tends to produce tones that were longer than we wanted. So, when creating our final music, we only use the first fourth of the signal produced by Matlab's `ifft()` function. As a result, the length of a single chord would be `4 * N / Fs`. As a result, to create a song approximately the length of the dance (max_time), the number of chords(Nc) would be `Nc = floor(4 * N /(Fs))`, `floor()` rounding down to the nearsest integer, as one cannot have part of a chord.
 
-For the initial filtering of all 3 axis, a similar pattern is followed: first, we take the FFT of the signal using Matlab's `fft()` function (A). We then set the sampling rate (Fs) to be 2,000 Hz (B), as this allows for a frequency range of -1,000 to 1,000 Hz, as the max frequency = Fs/2. This allows for a broad selection of tones, while avoiding some higher, harsher tones, that some listeners have found unpleasant during the development of this product. 
+For the initial filtering of all 3 axis, a similar pattern is followed: first, we take the FFT of the signal using Matlab's `fft()` function (A). We then set the sampling rate (Fs) to be 2,000 Hz (B), as this allows for a frequency range of -1,000 to 1,000 Hz, as the `max_frequency = Fs/2`. This allows for a broad selection of tones, while avoiding some higher, harsher tones, that some listeners have found unpleasant during the development of this product. 
 
-Then, all the peak frequencies are found, defined as a local maxima preceded by a value at least 1 unit less than itself (C). The top Nc positive peak frequencies are selected, and mirrored horizontally.
+Then, all the peak frequencies are found, defined as a local maxima preceded by a value at least 1 unit less than itself (C). The top Nc positive peak frequencies are selected, and mirrored horizontally, to avoid clashing phaseshifts caused by not perfectly symmetric FFTs (D).
 
-Then we spread out and shift the frequencies to broaden the range of possible tones, as well as to ensure all of them are in the audible domain. Lastly, the frequencies are mirrored, and the magnitudes standardized, to enable proper translation of frequency range during audiofile writing.
+Then we spread out and shift the frequencies to broaden the range of possible tones, as well as to ensure all of them are in the audible domain. This is done by finding each frequencies' index's distance from the 0 frequency, multiplying the distance by 2 (if the max frequency is less than half the max potential frequency), and increasing the distance by 20(E). Lastly, all the magnitudes are standardized, set to 100 unit lengths to enable proper translation of frequency range during audiofile writing(F).
 
-
--Increasing sampling rate to allow potential frequency range occupation of pleasant auditory reception (B).
--	Identify peak positive frequencies using local max positive selection (C)
--Selecting the greatest values (D),
--Calculating distance from zero, broadening the range of tones and shifting the frequencies into the audible domain, then employing a horizontal reflection to ensure positive frequencies are mirrored over the Y axis(E).
--	Standardizing the magnitude of the frequency for proper translation of frequency range during audio file writing (F).
 
 ## Pitch Tuning Algorithm / Chord Selection Process
 
