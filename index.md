@@ -29,7 +29,7 @@ The Movement-Synthesizer captures acceleration from the x, y, and z axes of smar
 <center>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/accelerometer.jpg" height="368.5" width="606.5">
 <br>
-<i>The 3 Axes of Motion Captured on the Accelerometer</i>
+<i>The 3 Axes of Motion Captured on the Accelerometer \[[5](/Movement-Synthesizer/references)\]</i>
 </center>
 <br>
 
@@ -51,7 +51,7 @@ Additionally, to encourage greater periods of movement, we based our total numbe
 <br>
 
 <i>Music Generated from Side to Side Movement</i>
-
+<br>
 Most of this movement is captured on the x axis of the accelerometer. As one can hear, the pitch of the x axis changes over time to allow for a variety of chords in different octaves.
 
 <br>
@@ -61,7 +61,7 @@ Most of this movement is captured on the x axis of the accelerometer. As one can
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/y-axisupdown.gif" alt="Up and down movement" height="332" width="589">
 <br>
 <i>Up and Down Movement Captured from Smartphone Accelerometer Data</i>
-
+<br>
 Most of this movement is captured on the y axis of the accelerometer. As one accelerates up and down, the pitch of the y axis changes significantly over time, allowing more of a variety of frequencies to be heard in comparison to the standing example down below. The pitch here is different from the x axis, which could be attributed to the constant 9.8 m/s^2 experienced from the normal force.
 
 <br>
@@ -80,7 +80,7 @@ Most of this movement is captured on the y axis of the accelerometer. As one acc
 
 <br>
 <i>Front and Back Movement Captured from Smartphone Accelerometer Data</i>
-
+<br>
 Most of this movement is captured on the z axis of the accelerometer. Similar to the other examples, the pitch of the z axis variates over time. 
 
 <br>
