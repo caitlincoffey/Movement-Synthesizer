@@ -29,7 +29,7 @@ The Movement-Synthesizer captures acceleration from the x, y, and z axes of smar
 <center>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/accelerometer.jpg" height="368.5" width="606.5">
 <br>
-<i>The 3 Axes of Motion Captured on the Accelerometer \[[5](/Movement-Synthesizer/references)\]</i>
+<i>The 3 Axes of Motion Captured on the Accelerometer <a href="/Movement-Synthesizer/references">[5]</a></i>
 </center>
 <br>
 
