@@ -104,11 +104,9 @@ Most of this movement is captured on the z axis of the accelerometer. Similar to
 <br>
 <center>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/macarena.gif">
-</center>
 <br>
 <i>The Macarena Dance Captured on the Accelerometer</i>
-
-- Add graphs of accelerometer data, FFTs
+</center>
 
 This dance involves movement around all three axes. As a result of the combined movement in all three axes, there is a significant amount of variation in pitch in the generated music. You can listen to the music generated below!
 
@@ -127,8 +125,8 @@ This dance involves movement around all three axes. As a result of the combined 
 <center><img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/standing.png">
 <br>
 <i>Standing Movement Captured on the Accelerometer</i>
-
 <br>
+</center>
 
 
 Although it might appear to be silly to use this example, standing is technically considered movement. Standing, as mentioned earlier, does provide some benefits to one's health \[[2](/Movement-Synthesizer/references)\]. Standing requires relatively little movement in comparison to the previous example. You can listen to the music generated below here!
@@ -141,7 +139,6 @@ Although it might appear to be silly to use this example, standing is technicall
 
 <i>Music Generated from Standing</i>
 <br>
-
 
 # Contributing
 
