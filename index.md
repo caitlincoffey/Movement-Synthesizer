@@ -120,7 +120,7 @@ This dance involves movement around all three axes. As a result of the combined 
 <center>
 <audio controls>
   
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
 <br>
 
 <i>Music Generated from the Macarena</i>
@@ -130,7 +130,7 @@ This dance involves movement around all three axes. As a result of the combined 
 ## Example 2: Standing
 
 <br>
-<center><img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/standing.png">
+<center><img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/standing.jpg">
 <br>
 <i>Standing Movement Captured on the Accelerometer</i>
 <br>
@@ -142,7 +142,7 @@ Although it might appear to be silly to use this example, standing is technicall
 <center>
 <audio controls>
   
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/standing.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/standing_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
 <br>
 
 <i>Music Generated from Standing</i>
