@@ -20,7 +20,7 @@ For people who are indoors most or all of the day (either working at home or iso
 
 In addition, even if the music isn’t a Mozart worthy masterpiece, having a low level of background music can help boost creativity in one’s endeavors \[[3](/Movement-Synthesizer/references)\]. According to the Harvard Medical School, “music can enhance the function of neural networks, slow the heart rate, lower blood pressure, and reduce levels of stress hormones, appealing to end users who might be stressed due to their environment or other factors" \[[4](/Movement-Synthesizer/references)\]. Our team aims to combat stress and enhance creativity by producing quality music that a user can listen to at any time.
 
-Inspired by the benefits of both these exercises, our project combines them into an easily accessible smartphone program targetted towards people who are spending more time than usual indoors and sitting down (e.g. students, remote workers).
+Inspired by the benefits of both these exercises, our project combines them into an easily accessible smartphone program targeted towards people who are spending more time than usual indoors and sitting down (e.g. students, remote workers).
 
 # How it Works
 
@@ -37,7 +37,7 @@ After capturing the accelerometer data, it translates signals from the three axe
 
 One of the main methods we use to do our analysis is a Fourier Transform. A Fourier Transform separates individual frequencies found in the incoming, complex signal of movement. It does so by using a series of matrix operations to transform a signal in the time domain to the frequency domain, allowing individual frequencies to be recognized. Without the use of this method, we would have been unable to manipulate and tune individual frequencies to create our music.
 
-We use information from movement along all three axes to encourage users to move their body as much as they can. Furthermore, the more one accelerates in each axis the more the frequencies will vary over time. By moving frequently in all three directions, one can produce songs with more variability in sounds than by sitting still or only using one axis of movement. Our project looks at all frequencies and all possible types of motion in order to produce songs that capture the amount of variability in motion that is present.
+We use information from movement along all three axes to encourage users to move their body as much as they can. Furthermore, the more one accelerates in each axis, the more the frequencies will vary over time. By moving frequently in all three directions, one can produce songs with more variability in sounds than by sitting still or only using one axis of movement. Our project looks at all frequencies and all possible types of motion in order to produce songs that capture the amount of variability in motion that is present.
 
 To encourage variations of movement even further, the same movement along different axes will sound different depending on the axis used. This is because of the way the incoming signals are tuned in the pitch tuning algorithm, which is explained more in detail on this [page](https://caitlincoffey.github.io/Movement-Synthesizer/algorithms). One can look at video and audio files of the shuffling (side-to-side), bumping (front-back), and jumping (up-down) movements to see/hear the difference of each axis of movement!
 
