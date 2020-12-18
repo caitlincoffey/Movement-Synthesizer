@@ -27,7 +27,7 @@ Inspired by the benefits of both these exercises, our project combines them into
 
 # How it Works
 
-The Movement-Synthesizer captures acceleration from the x, y, and z axes of smartphone accelerometer data. It does so using Matlab's Sensor Data Collection App and by loading that data into a livescript on Matlab's Desktop version. In the future, this could be made into a smartphone app. 
+The Movement-Synthesizer captures acceleration from the x, y, and z axes of smartphone accelerometer data. It does so using MATLAB's Sensor Data Collection App and by loading that data into a livescript on MATLAB's Desktop version. In the future, this could be made into a smartphone app. 
 <br>
 <center>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/accelerometer.png" height="300" width="300">
