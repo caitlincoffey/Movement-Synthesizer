@@ -6,8 +6,6 @@ This sets the basis for our future directions, where we hope to temporally synch
 
 Below, these algorithms are explained in greater detail, while visualizing the process through the Macarena dance.
 
-## Signal Manipulation and Fourier Analysis
-
 ## Selecting Peak Frequencies via Filtering in the Frequency Domain
 
 First, the number of chords needed to create a song that lasts approximately as long as the dance is calculated. Each chord is created by using MATLAB's inverse fast Fourier transform `ifft()` function, and will return a signal with the same N number of points as there were used to create the original fast Fourier transform (FFT). Therefore, the length of one full chord would be N divided by the sampling rate (Fs), or `N / Fs`. However, that tends to produce tones that were longer than we wanted. So, when creating our final music, we only use the first fourth of the signal produced by MATLAB's `ifft()` function. As a result, the length of a single chord would be `4 * N / Fs`. In summary, to create a song approximately the length of the dance (max_time), the number of chords (Nc) would be `Nc = floor(4 * N /(Fs))`, `floor()` rounding down to the nearest integer, as one cannot have part of a chord.
