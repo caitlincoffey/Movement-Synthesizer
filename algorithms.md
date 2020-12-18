@@ -139,22 +139,22 @@ Based off the chord selected at random and the incoming frequency from the x axi
 <br>
 <audio controls> 
   
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_all.mp3" type="audio/mpeg"></audio>
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/short maca_all.mp3" type="audio/mpeg"></audio>
 The final music with all three axes combined from the Macarena.
 <br>
 <br>
 
 <audio controls> 
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_x_only.mp3" type="audio/mpeg"></audio> The music along the x axis for the Macarena.
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/short maca_x_only.mp3" type="audio/mpeg"></audio> The music along the x axis for the Macarena.
 <br>
 <br>
 
-<audio controls> <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_y_only.mp3" type="audio/mpeg"></audio> The music along the y axis for the Macarena.
+<audio controls> <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/short maca_y_only.mp3" type="audio/mpeg"></audio> The music along the y axis for the Macarena.
 <br>
 <br>
 
 <audio controls>
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_z_only.mp3" type="audio/mpeg"></audio> The music along the z axis for the Macarena.
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/short maca_z_only.mp3" type="audio/mpeg"></audio> The music along the z axis for the Macarena.
 <br>
 <br>
 
