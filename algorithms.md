@@ -20,7 +20,7 @@ For the initial filtering of all 3 axes, a similar pattern is followed: first, w
 <br>
 <br>
 <br>
-We then set the sampling rate (Fs) to be 2,000 Hz, as this allows for a frequency range of -1,000 to 1,000 Hz, as the `max_frequency = Fs/2`. This allows for a broad selection of tones, while avoiding some higher, harsher tones that some listeners have found to be unpleasant during the development of this product. 
+We are taking samples (Fs) of our frequencies at 2,000 Hz, as this allows for a frequency range of -1,000 to 1,000 Hz, as the `max_frequency = Fs/2`. This allows for a broad selection of tones, while avoiding repetition of some higher, harsher tones that some listeners have found to be unpleasant during the development of this product. If we had taken samples of our frequencies in Matlab using the sampling rate of the data collection on our accelerometer (100 Hz), we would have never been able to create diverse music audible to the human ear. This is because music audible to the human ear is between 16 Hz to 20000 Hz. According to the Nyquist Sampling Theorem, frequencies beyond 200 Hz (given the sampling rate of 100 Hz) would be aliased as lower frequencies due to the low sampling rate. There is relatively little music that can be made between 16 to 200Hz on a 12-tone music scale, in comparison to what can be made between 16-20000Hz. 
 
 <br>
 
@@ -39,6 +39,8 @@ Then, all the peak frequencies are found, defined as a local maxima preceded by 
 <br>
 <br>
 <br>
+The way we find the local maxima is by using an algorithm developed by Eli Billauer \[[7](https://caitlincoffey.github.io/Movement-Synthesizer/references)\]. The algorithm loops through each frequency's magnitude (from the FFT of the movement signal) and compares each one to the next. If one is larger than the other, the larger one is stored in a temporary list. The algorithm keeps going until it processes the last element of the FFT, where it will return a vector of the indexes where the maximum magnitudes were found. 
+
 The top Nc positive peak frequencies are selected, and then mirrored horizontally, to avoid clashing phase shifts caused by not perfectly symmetric FFTs.
 
 <br>
@@ -72,9 +74,11 @@ For the purpose of making specific music chords that sound 'pleasing' to the hum
 
 To tune each frequency from movement to a respective piano note, the pitch tuning algorithm finds the lowest distance between each frequency of movement and the piano frequencies and replaces the frequency from movement with the respective piano note. The lowest distance can be impacted for the y and z axes depending on the chord selected. When these restrictions apply, the piano frequencies that do not line up with the selected chord (i.e. notes that are not present in that chord) are not considered when finding the lowest distance between the frequencies from movement and the piano frequencies. 
 
-For the X axis, the base note is determined by finding the remainder of the index selected for the music note divided by 12 (`mod(music_note_index, 12)`), and setting all values where the base note is 0 to 12, to ensure compatibility with MATLAB's indexing. After an initial base note has been selected, the next frequency is selected by first matching the frequency to the closest octave value of the base note, then allowing it to either remain as is, increase by 5 notes, or decrease by 5 notes.
+For the x axis, the base note is determined by finding the remainder of the index selected for the music note divided by 12 (`mod(music_note_index, 12)`), and setting all values where the base note is 0 to 12, to ensure compatibility with MATLAB's indexing. After an initial base note has been selected, the next frequency is selected by first matching the frequency to the closest octave value of the base note, then allowing it to either remain as is, increase by 5 notes, or decrease by 5 notes.
 
-For the y and z axes, the frequencies are matched to the closest value for all octaves of three different notes. Those are determined by the chord selection process below and are based off of the corresponding x base note.
+For the y and z axes, the frequencies are matched to the closest value for all octaves of three different notes. The three different notes are determined by the chord selection process below and are based off of the corresponding x frequency (the base note).
+
+The pitch tuning shifts any frequencies higher or lower than the maximum/minumum piano frequencies to frequencies within the range of the piano (7458 Hz and 16 Hz respectively). The algorithm acts similarly to a high and low pass filter in a sense that frequencies outside of this range are shifted, but it is not actually filtering out these frequencies. Our team did not remove these frequencies because these frequencies added more variety to the pitch of the music. By shifting the frequencies to a range audible to the human ear and to a range playable by the piano, they no longer become the objectively bad-sounding or inaudible frequencies that they once were.
 
 If you want to look more at the music theory behind the frequencies of Western music and the pitch tuning algorithm, please read more [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
 
@@ -123,9 +127,7 @@ There are six chords that can be selected at any given time. The process of sele
 
 <i>Table of All Possible Chords</i>
 
-Based off the chord selected at random and the incoming frequency from the x axis, there are three possible note choices (integers) to select for both the y and z axes. These three integers correspond to the notes needed to produce the selected chord in the 12-tone Western music scale. 
-
-If you want to look more at the music theory behind what a chord is and the chord selection process, please read more [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
+Based off the chord selected at random and the incoming frequency from the x axis, there are three possible note choices (integers) to select for both the y and z axes. These three integers correspond to the notes needed to produce the selected chord in the 12-tone Western music scale. If you are curious about why these specific numbers are being added to the base note and why we have selected only these 6 chords, please read more about the music theory behind the process [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
 
 
 ## Playing Back the Music 
