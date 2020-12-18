@@ -1,5 +1,9 @@
 # Algorithm Development 
 
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/flowchart.png">
+
+<i>Flow Chart of the Incoming Signal Transformed Into the Final Product</i>
+
 We have created an innovative approach towards making our music. First, we select the top peak frequencies, and manipulate them to allow for proper matching to tuned music notes. Then the frequencies along the x, y, and z axes are matched to notes, the selection of which is limited by our custom algorithm. Then, we play the frequencies in order of initial magnitude before standardization, one chord created from the combination of one note from each axis at a time; this was a direct way of implementing interesting music in MATLAB.
 
 This sets the basis for our future directions, where we hope to temporally synchronise the movement inputs with the music outputs.
