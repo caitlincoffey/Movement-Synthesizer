@@ -76,6 +76,12 @@ For the x axis, the base note is determined by finding the remainder of the inde
 
 For the y and z axes, the frequencies are matched to the closest value for all octaves of three different notes. The three different notes are determined by the chord selection process below and are based off of the corresponding x frequency (the base note).
 
+<br>
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft tuned.png" height="204" width="259.333333">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft tuned.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft tuned.png" height="204" width="259.333333">
+<i> Tuned Frequencies with Sampling Rate of 2000 Hz for the x (left), y (middle), and z (right) axes. </i>
+<br>
+<br>
+
 The pitch tuning shifts any frequencies higher or lower than the maximum/minumum piano frequencies to frequencies within the range of the piano (7458 Hz and 16 Hz respectively). The algorithm acts similarly to a high and low pass filter in a sense that frequencies outside of this range are shifted, but it is not actually filtering out these frequencies. Our team did not remove these frequencies because these frequencies added more variety to the pitch of the music. By shifting the frequencies to a range audible to the human ear and to a range playable by the piano, they no longer become the objectively bad-sounding or inaudible frequencies that they once were.
 
 If you want to look more at the music theory behind the frequencies of Western music and the pitch tuning algorithm, please read more [here](https://caitlincoffey.github.io/Movement-Synthesizer/musictheory).
