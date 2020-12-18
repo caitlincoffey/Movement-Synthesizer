@@ -2,13 +2,13 @@
 
 We have created an innovative approach towards making our music. First, we select the top peak frequencies, and manipulate them to allow for proper matching to tuned music notes. Then the frequencies along the x, y, and z axes are matched to notes, the selection of which is limited by our custom algorithm. Then, we play the frequencies in order of initial magnitude before standardization, one chord created from the combination of one note from each axis at a time; this was a direct way of implementing interesting music in MATLAB.
 
-This sets the basis for our future directions, where we hope to temporally synchronise the movement inputs with the music outputs.
+This sets the basis for our future directions, where we hope to temporally synchronize the movement inputs with the music outputs.
 
 Below, these algorithms are explained in greater detail, while visualizing the process through the Macarena dance.
 
 ## Selecting Peak Frequencies via Filtering in the Frequency Domain
 
-First, the number of chords needed to create a song that lasts approximately as long as the dance is calculated. Each chord is created by using MATLAB's inverse fast Fourier transform `ifft()` function, and will return a signal with the same N number of points as there were used to create the original fast Fourier transform (FFT). Therefore, the length of one full chord would be N divided by the sampling rate (Fs), or `N / Fs`. However, that tends to produce tones that were longer than we wanted. So, when creating our final music, we only use the first fourth of the signal produced by MATLAB's `ifft()` function. As a result, the length of a single chord would be `4 * N / Fs`. In summary, to create a song approximately the length of the dance (max_time), the number of chords (Nc) would be `Nc = floor(4 * N /(Fs))`, `floor()` rounding down to the nearest integer, as one cannot have part of a chord.
+First, we calculate the number of chords needed to create a song that lasts approximately as long as the dance. Each chord is created by using MATLAB's inverse fast Fourier transform `ifft()` function, and will return a signal with the same N number of points as there were used to create the original fast Fourier transform (FFT). Therefore, the length of one full chord would be N divided by the sampling rate (Fs), or `N / Fs`. However, that tends to produce tones that were longer than we wanted. So, when creating our final music, we only use the first fourth of the signal produced by MATLAB's `ifft()` function. As a result, the length of a single chord would be `4 * N / Fs`. In summary, to create a song approximately the length of the dance (max_time), the number of chords (Nc) would be `Nc = floor(4 * N /(Fs))`, `floor()` rounding down to the nearest integer, as one cannot have part of a chord.
 
 For the initial filtering of all 3 axes, a similar pattern is followed: first, we take the FFT of the signal using MATLAB's `fft()` function.
 
@@ -75,12 +75,6 @@ To tune each frequency from movement to a respective piano note, the pitch tunin
 For the x axis, the base note is determined by finding the remainder of the index selected for the music note divided by 12 (`mod(music_note_index, 12)`), and setting all values where the base note is 0 to 12, to ensure compatibility with MATLAB's indexing. After an initial base note has been selected, the next frequency is selected by first matching the frequency to the closest octave value of the base note, then allowing it to either remain as is, increase by 5 notes, or decrease by 5 notes.
 
 For the y and z axes, the frequencies are matched to the closest value for all octaves of three different notes. The three different notes are determined by the chord selection process below and are based off of the corresponding x frequency (the base note).
-
-<br>
-<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft tuned.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft tuned.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft tuned.png" height="204" width="259.333333">
-<i> Tuned Frequencies with Sampling Rate of 2000 Hz for the x (left), y (middle), and z (right) axes. </i>
-<br>
-<br>
 
 The pitch tuning shifts any frequencies higher or lower than the maximum/minumum piano frequencies to frequencies within the range of the piano (7458 Hz and 16 Hz respectively). The algorithm acts similarly to a high and low pass filter in a sense that frequencies outside of this range are shifted, but it is not actually filtering out these frequencies. Our team did not remove these frequencies because these frequencies added more variety to the pitch of the music. By shifting the frequencies to a range audible to the human ear and to a range playable by the piano, they no longer become the objectively bad-sounding or inaudible frequencies that they once were.
 
