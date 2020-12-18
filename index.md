@@ -15,7 +15,7 @@
 
 # About The Project
 
-Imagine having a new musical instrument easily acessible from your phone that encourages movement, different dance moves, and a love for experimentation. Our project idea aims to fulfill this part of people’s lives by taking accelerometer data from a smartphone and manipulating these incoming signals to produce vibrant, unique music relative to the person’s movement.
+Imagine having a new musical instrument easily accessible from your phone that encourages movement, different dance moves, and a love for experimentation. Our project idea aims to fulfill this part of people’s lives by taking accelerometer data from a smartphone and manipulating these incoming signals to produce vibrant, unique music relative to the person’s movement.
 
 # Why Create Music from Movement?
 
