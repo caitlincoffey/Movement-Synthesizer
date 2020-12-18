@@ -141,7 +141,7 @@ An example of a classic dance is The Macarena Dance which involves movement arou
 <center>
 <audio controls>
   
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/macarena_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/short maca_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
 <br>
 
 <i>Music Generated from the Macarena</i>
