@@ -10,19 +10,23 @@ Below, these algorithms are explained in greater detail, while visualizing the p
 
 First, the number of chords needed to create a song that lasts approximately as long as the dance is calculated. Each chord is created by using MATLAB's inverse fast Fourier transform `ifft()` function, and will return a signal with the same N number of points as there were used to create the original fast Fourier transform (FFT). Therefore, the length of one full chord would be N divided by the sampling rate (Fs), or `N / Fs`. However, that tends to produce tones that were longer than we wanted. So, when creating our final music, we only use the first fourth of the signal produced by MATLAB's `ifft()` function. As a result, the length of a single chord would be `4 * N / Fs`. In summary, to create a song approximately the length of the dance (max_time), the number of chords (Nc) would be `Nc = floor(4 * N /(Fs))`, `floor()` rounding down to the nearest integer, as one cannot have part of a chord.
 
-For the initial filtering of all 3 axes, a similar pattern is followed: first, we take the FFT of the signal using MATLAB's `fft()` function (A).
+For the initial filtering of all 3 axes, a similar pattern is followed: first, we take the FFT of the signal using MATLAB's `fft()` function.
 
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft.png" height="204" width="259.333333">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft.png" height="204" width="259.333333">
 
 <i>A) FFTs of accelerometer data for the x (left), y (middle), and z (right) axes. </i>
 <br>
-We then set the sampling rate (Fs) to be 2,000 Hz (B), as this allows for a frequency range of -1,000 to 1,000 Hz, as the `max_frequency = Fs/2`. This allows for a broad selection of tones, while avoiding some higher, harsher tones, that some listeners have found unpleasant during the development of this product. 
+<br>
+<br>
+We then set the sampling rate (Fs) to be 2,000 Hz, as this allows for a frequency range of -1,000 to 1,000 Hz, as the `max_frequency = Fs/2`. This allows for a broad selection of tones, while avoiding some higher, harsher tones, that some listeners have found unpleasant during the development of this product. 
 
 <br>
 
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft fs.png" height="204" width="259.333333">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft fs.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft fs.png" height="204" width="259.333333">
 
 <i>B) FFTs of accelerometer data plotted with the new frequencies corresponding to the increased sampling rate for all 3 axes</i>
+<br>
+<br>
 <br>
 Then, all the peak frequencies are found, defined as a local maxima preceded by a value at least 1 unit less than itself (C). 
 <br>
@@ -31,8 +35,9 @@ Then, all the peak frequencies are found, defined as a local maxima preceded by 
 
 <i>C) Filtered FFTs showing only the local maximum frequencies for all 3 axes. </i>
 <br>
-
-The top Nc positive peak frequencies are selected, and then mirrored horizontally, to avoid clashing phase shifts caused by not perfectly symmetric FFTs(D).
+<br>
+<br>
+The top Nc positive peak frequencies are selected, and then mirrored horizontally, to avoid clashing phase shifts caused by not perfectly symmetric FFTs.
 
 <br>
 
@@ -40,13 +45,17 @@ The top Nc positive peak frequencies are selected, and then mirrored horizontall
 
 <i>D) Filtered FFTs showing only the range of highest frequencies selected for music making purposes for all 3 axes.</i>
 <br>
-Then we spread out and shift the frequencies to broaden the range of possible tones, as well as to ensure all of them are in the audible domain. This is done by finding each frequencies' index's distance from the 0 frequency and multiplying the distance by 2 (if the max peak frequency is less than half the max potential frequency) to increase the range of tones. We then increase the distance by 10; which would shift all signals over 25 Hz, 5 Hz above the lower limit of humans' audible range \[[3](www.jstor.org/stable/10.1086/665048)\](E).
+<br>
+<br>
+Then we spread out and shift the frequencies to broaden the range of possible tones, as well as to ensure all of them are in the audible domain. This is done by finding each frequencies' index's distance from the 0 frequency and multiplying the distance by 2 (if the max peak frequency is less than half the max potential frequency) to increase the range of tones. We then increase the distance by 10; which would shift all signals over 25 Hz, 5 Hz above the lower limit of humans' audible range \[[3](www.jstor.org/stable/10.1086/665048)\].
 <br>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected shifted.png" height="204" width="259.333333">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected shifted.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected shifted.png" height="204" width="259.333333">
 
 <i>E) Filtered and Shifted FFTs with a broader range of tones, frequencies all in the audible range, and the frequencies symmetric for all 3 axes.</i>
 <br>
-Lastly, all the magnitudes are standardized, set to 100 unit lengths to enable proper translation of frequency range during audio file writing(F).
+<br>
+<br>
+Lastly, all the magnitudes are standardized, set to 100 unit lengths to enable proper translation of frequency range during audio file writing.
 <br>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected shifted standardized.png" height="204" width="259.333333">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected shifted standardized.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected shifted standardized.png" height="204" width="259.333333">
 
