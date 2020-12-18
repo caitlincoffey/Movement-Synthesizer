@@ -1,9 +1,5 @@
 # Algorithm Development 
 
-<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/flowchart.png">
-
-<i>Flow Chart of the Incoming Signal Transformed Into the Final Product</i>
-
 We have created an innovative approach towards making our music. First, we select the top peak frequencies, and manipulate them to allow for proper matching to tuned music notes. Then the frequencies along the x, y, and z axes are matched to notes, the selection of which is limited by our custom algorithm. Then, we play the frequencies in order of initial magnitude before standardization, one chord created from the combination of one note from each axis at a time; this was a direct way of implementing interesting music in MATLAB.
 
 This sets the basis for our future directions, where we hope to temporally synchronise the movement inputs with the music outputs.
@@ -55,7 +51,7 @@ The top Nc positive peak frequencies are selected, and then mirrored horizontall
 <br>
 <br>
 <br>
-Then we spread out and shift the frequencies to broaden the range of possible tones, as well as to ensure all of them are in the audible domain. This is done by finding each frequencies' index's distance from the 0 frequency and multiplying the distance by 2 (if the max peak frequency is less than half the max potential frequency) to increase the range of tones. We then increase the distance by 10; which would shift all signals over 25 Hz, 5 Hz above the lower limit of humans' audible range \[[3](https://caitlincoffey.github.io/Movement-Synthesizer/references)\].
+Then we spread out and shift the frequencies to broaden the range of possible tones, as well as to ensure all of them are in the audible domain. This is done by finding each frequencies' index's distance from the 0 frequency and multiplying the distance by the ratio of the highest frequency selected over the highest frequency before aliasing, making the tones cover the max range of frequencies. The frequencies are shifted by 20 Hz, forcing all of the frequencies above this lower limit of audible frequencies. \[[3](https://caitlincoffey.github.io/Movement-Synthesizer/references)\].
 <br>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft max selected shifted.png" height="204" width="259.333333">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft max selected shifted.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft max selected shifted.png" height="204" width="259.333333">
 
