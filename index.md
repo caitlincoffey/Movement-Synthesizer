@@ -56,7 +56,7 @@ Additionally, to encourage greater periods of movement, we based our total numbe
 <br>
 <audio controls>
   
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/side_to_side_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/x-axissidetoside.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
 <br>
 <i>Music Generated from Side to Side Movement</i>
 
