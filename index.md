@@ -55,7 +55,7 @@ Additionally, to encourage greater periods of movement, we based our total numbe
 <br>
 <br>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/SidetoSide X axis fft.png" height="204" width="259.333333">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/SidetoSide Y axis fft.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/SidetoSide Z axis fft.png" height="204" width="259.333333">
-
+<br>
 <i>FFTs of Unfiltered Accelerometer Data for the X (left), Y (middle), and Z (right) Axes.</i>
 <br>
 <br>
@@ -80,7 +80,7 @@ Most of this movement is captured on the x axis of the accelerometer. As one can
 <br>
 <br>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/UpDown X axis fft.png" height="204" width="259.333333">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/UpDown Y axis fft.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/UpDown Z axis fft.png" height="204" width="259.333333">
-
+<br>
 <i>FFTs of Unfiltered Accelerometer Data for the X (left), Y (middle), and Z (right) Axes.</i>
 <br>
 <br>
@@ -106,7 +106,7 @@ Most of this movement is captured on the y axis of the accelerometer. As one acc
 <br>
 <br>
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/FrontBack X axis fft.png" height="204" width="259.333333">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/FrontBack Y axis fft.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/FrontBack Z axis fft.png" height="204" width="259.333333">
-
+<br>
 <i>FFTs of Unfiltered Accelerometer Data for the X (left), Y (middle), and Z (right) Axes.</i>
 <br>
 <br>
