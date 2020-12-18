@@ -7,4 +7,4 @@
 5. MathWorks. “Accelerometer.” *Help Center*, MathWorks, 2014, www.mathworks.com/help/supportpkg/android/ref/accelerometer.html. 
 6. Lazzaro, Martin Anthony. “What Makes Chords Sound Good?” *Science in Our World: Certainty and Controversy*, Penn State, 16 Sept. 2015, sites.psu.edu/siowfa15/2015/09/16/what-makes-chords-sound-good/. 
 7. Billauer, Eli. “Peakdet: Peak Detection Using MATLAB.” *Eli Billauer. Freelancing Electrical Engineer Since Year 2000.*, Billauer.co.il, 20 July 2012, www.billauer.co.il/peakdet.html. 
-8. Purves, Dale, and Stephen Mark. Williams. *Neuroscience. 2nd Edition.* Sinauer Associates, 2001. 
+8. “Sound - Audible and Inaudible Sounds: Frequency Range and Vibration.” *BYJUS*, BYJU'S, 5 Aug. 2020, byjus.com/physics/inaudible-audible-sound/. 
