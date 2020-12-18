@@ -19,8 +19,50 @@ The chord selection is randomized so that the generated music does not sound rep
 
 It selects between six chords: a major chord in the same key signature, a minor chord in the same key signature, a minor chord in the key signature above, a major chord in the key signature above, a minor chord in the key signature below, and a major chord the key signature below. This helps mitigate most dissonant chords, while it also provides some room for the key signature to move around.
 
-Based off the chord selection and the incoming note from the x axis (the base note), there are three possible note choices (integers) to select for both the z and y axes. These three integers correspond to the notes needed to produce the selected chord in the 12-tone Western music scale. Here is an example of three possible note choices to form a major chord in the same key signature: `musicnote_limits = [base_note, base_note+4, base_note+7];`
+Based off the chord selection and the incoming note from the x axis (the base note), there are three possible note choices (integers) to select for both the z and y axes. These three integers correspond to the notes needed to produce the selected chord in the 12-tone Western music scale. Here is a table of all 6 possible chords that can be selected, and their corresponding three-note choices:
 
-Major chords have three notes: the root, the major third, and the perfect 5th. The root in this case is the base note selected from the x axis. Since 12-tone music is a modulo 12 arithmetic system based on 'half tones', major 3rds are represented as 4 'half tones' above the base note, and perfect 5ths are represented as 7 'half tones' above the base note.
+ <table style="width:100%">
+  <tr>
+    <th>First Option (Base Note)</th>
+    <th>Second Option (Major/Minor 3rd)</th>
+    <th>Third Option (Perfect 5th)</th>
+ </tr>
+ <tr>
+   <td>base_note</td>
+   <td>base_note+4</td>
+   <td>base_note+7</td>
+  </tr>
+  <tr>
+   <td>base_note</td>
+   <td>base_note+4</td>
+   <td>base_note+9</td>
+  </tr>
+  <tr>
+   <td>base_note</td>
+   <td>base_note+5</td>
+   <td>base_note+9</td>
+  </tr>
+ <tr>
+  <td>base_note+2</td>
+  <td>base_note+5</td>
+  <td>base_note+9</td>
+ </tr>
+ <tr>
+  <td>base_note+2</td>
+  <td>base_note+7</td>
+  <td>base_note+11</td>
+  </tr>
+ <tr>
+  <td>base_note+4</td>
+  <td>base_note+7</td>
+  <td>base_note+11</td>
+ </tr>
+</table> 
 
-The reason why the model is limited to major and minor chords within 1 key signature difference is because other chords (augmented chords, devil's triad) sounded objectively painful when tested on two human ears. Since it is hard to quantify what sounds 'good' or 'bad' with a sample size of two people, our group found research conducted by Pennsylvania State University that showed the majority of people prefer chords that are found in the harmonic series of the base note \[[6](https://sites.psu.edu/siowfa15/2015/09/16/what-makes-chords-sound-good/)\].
+<center><i>Table of All Possible Chords</i></center>
+
+You might ask, why add these particular numbers to the base note? It's actually because of concepts found in music theory; the numbers correspond to particular chords in the 12-tone Western scale. To explain the music theory behind the numbers, let us focus on the first value in the table as an example: `musicnote_limits = [base_note, base_note+4, base_note+7];`
+
+This particular example is a major chord in the same key signature as the base note. Major chords are defined by three notes: the root, the major third, and the perfect 5th. The root in this case is the base note selected from the x axis, as we are staying in the same key signature. Since 12-tone music is a modulo 12 arithmetic system based on 'half tones', major 3rds are represented as 4 'half tones' above the base note, and perfect 5ths are represented as 7 'half tones' above the base note. This is where the '4' and '7' comes from! We can trace this process back to other chords as well.
+
+Note that the model is limited to major and minor chords within 1 key signature difference because other chords (augmented chords, devil's triad) sounded objectively painful when tested on two human ears. Since it is hard to quantify what sounds 'good' or 'bad' with a sample size of two people, our group found research conducted by Pennsylvania State University that showed the majority of people prefer chords that are found in the harmonic series of the base note \[[6](https://sites.psu.edu/siowfa15/2015/09/16/what-makes-chords-sound-good/)\].
