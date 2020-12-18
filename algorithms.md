@@ -62,15 +62,6 @@ Lastly, all the magnitudes are standardized, set to 100 unit lengths to enable p
 <i>F) Final FFTs before Pitch Tuning Algorithm, where the magnitudes of the frequencies are all set to 100 units for all 3 axes.</i>
 
 
-First, the number of chords needed to create a song that lasts approximately as long as the dance is calculated. Each chord is created by using MATLAB's inverse fast Fourier transform `ifft()` function, and will return a signal with the same N number of points as there were used to create the original fast Fourier transform (FFT). Therefore, the length of one full chord would be N divided by the sampling rate (Fs), or `N / Fs`. However, that tends to produce tones that were longer than we wanted. So, when creating our final music, we only use the first fourth of the signal produced by MATLAB's `ifft()` function. As a result, the length of a single chord would be `4 * N / Fs`. In summary, to create a song approximately the length of the dance (max_time), the number of chords (Nc) would be `Nc = floor(4 * N /(Fs))`, `floor()` rounding down to the nearest integer, as one cannot have part of a chord.
-
-For the initial filtering of all 3 axes, a similar pattern is followed: first, we take the FFT of the signal using MATLAB's `fft()` function (A). We then set the sampling rate (Fs) to be 2,000 Hz (B), as this allows for a frequency range of -1,000 to 1,000 Hz, as the `max_frequency = Fs/2`. This allows for a broad selection of tones, while avoiding some higher, harsher tones, that some listeners have found unpleasant during the development of this product. 
-
-Then, all the peak frequencies are found, defined as a local maxima preceded by a value at least 1 unit less than itself (C). The top Nc positive peak frequencies are selected, and then mirrored horizontally, to avoid clashing phase shifts caused by not perfectly symmetric FFTs(D).
-
-Then we spread out and shift the frequencies to broaden the range of possible tones, as well as to ensure all of them are in the audible domain. This is done by finding each frequencies' index's distance from the 0 frequency and multiplying the distance by 2 (if the max peak frequency is less than half the max potential frequency) to increase the range of tones. We then increase the distance by 10; which would shift all signals over 25 Hz, 5 Hz above the lower limit of humans' audible range \[[3](www.jstor.org/stable/10.1086/665048)\](E). Lastly, all the magnitudes are standardized, set to 100 unit lengths to enable proper translation of frequency range during audio file writing(F).
-
-
 ## Pitch Tuning Algorithm / Chord Selection Process
 
 ### Pitch Tuning Algorithm
