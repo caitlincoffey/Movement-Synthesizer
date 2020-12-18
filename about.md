@@ -5,4 +5,4 @@ Caitlin is an E:C major from the Olin College of Engineering. She likes to bake 
 [caitlincoffey.com](http://caitlincoffey.com)
 
 ## Ale Cuevas
-
+Ale is a second year from Olin College of Engineering. They enjoy reading fanfiction, practing karate, and playing with their puppy. Contact them at mcuevas@olin.edu.
