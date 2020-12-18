@@ -77,7 +77,7 @@ Most of this movement is captured on the x axis of the accelerometer. As one can
 
 <audio controls>
   
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/up_down_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/y-axisupdown.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
 <br>
 <i>Music Generated from Up and Down Movement</i>
 <br>
@@ -99,7 +99,7 @@ Most of this movement is captured on the y axis of the accelerometer. As one acc
 
 <audio controls>
   
-<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/front_back_all.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
+<source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/z-axisfrontback.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
 <br>
 
 <i>Music Generated from Front to Back Movement</i>
