@@ -8,17 +8,20 @@
   
 > - [References](/Movement-Synthesizer/references)
  >    - A list of resources our team referenced when creating this project
+ 
+> - [About the Team](/Movement-Synthesizer/about)
+ >    - More information about the team behind the project (Ale and Caitlin)
 
 
 # About The Project
 
-Imagine having a new musical instrument from your phone that encourages movement, different dance moves, and a love for experimentation. Our project idea aims to fill this potential hole in people’s lives by taking accelerometer data from a smartphone and manipulating these incoming signals to produce vibrant, unique music relative to the person's movement.
+Imagine having a new musical instrument easily acessible from your phone that encourages movement, different dance moves, and a love for experimentation. Our project idea aims to fulfill this part of people’s lives by taking accelerometer data from a smartphone and manipulating these incoming signals to produce vibrant, unique music relative to the person’s movement.
 
 # Why Create Music from Movement?
 
 For people who are indoors most or all of the day (either working at home or isolating), one might have heard of the term 'Quarantine Fatigue'. Quarantine fatigue is caused by a reduction in physical activity which affects one's mind \[[1](/Movement-Synthesizer/references)\]. According to the American Heart Association even small bursts of movement are beneficial to one’s health \[[2](/Movement-Synthesizer/references)\]. By having the collection of the information be tied to a smartphone, it allows flexibility on the user’s behalf. End users can collect the data while running, walking, or even standing. To encourage movement, the longer someone moves, the longer the song will be!
 
-In addition, even if the music isn’t a Mozart worthy masterpiece, having a low level of background music can help boost creativity in one’s endeavors \[[3](/Movement-Synthesizer/references)\]. According to the Harvard Medical School, “music can enhance the function of neural networks, slow the heart rate, lower blood pressure, and reduce levels of stress hormones, appealing to end users who might be stressed due to their environment or other factors" \[[4](/Movement-Synthesizer/references)\]. Our team aims to combat stress and enhance creativity by producing quality music that a user can listen to at any time.
+In addition, even if the music isn’t a Mozart worthy masterpiece, having a low level of background music can help boost creativity in one’s endeavors \[[3](/Movement-Synthesizer/references)\]. According to the Harvard Medical School, “music can enhance the function of neural networks, slow the heart rate, lower blood pressure, and reduce levels of stress hormones, appealing to end users who might be stressed due to their environment or other factors" \[[4](/Movement-Synthesizer/references)\]. Our team aims to combat stress whilst enhancing creativity by producing quality music that a user can listen to at any time.
 
 Inspired by the benefits of both these exercises, our project combines them into an easily accessible smartphone program targeted towards people who are spending more time than usual indoors and sitting down (e.g. students, remote workers).
 
@@ -120,7 +123,7 @@ Most of this movement is captured on the z axis of the accelerometer. Similar to
 <i>The Macarena Dance Captured on the Accelerometer</i>
 </center>
 
-This dance involves movement around all three axes. As a result of the combined movement in all three axes, there is a significant amount of variation in pitch in the generated music. You can listen to the music generated below!
+An example of a classic dance is The Macarena Dance which involves movement around all three axes. As a result of the combined movement in all three axes, there is a significant amount of variation in pitch in the generated music. This is because we are changing in velocity (e.g. direction) significantly as we are moving and the algorithm plays the frequencies in order of magnitude. You can listen to the music generated below!
 
 <center>
 <audio controls>
@@ -161,8 +164,11 @@ As of now, the Movement Synthesizer lives on a Matlab livescript, and there is n
 
 - Create a smartphone app (Android + IOS) that gathers accelerometer data and uses the algorithms mentioned in the [Algorithm Development](/Movement-Synthesizer/algorithms) to process the data
 - Test the algorithm on specific patterns of behavior, such as marching
-- Add more complexity to the chord selection process (perhaps using Machine Learning to select chords rather than at random?)
-  - Improving the current design of the chord selection algorithm would help make the music more unique and entertaining than it is right now. As of now, the chords are selected randomly. Modern music does not do this; chords are carefully selected based on at least the 5-10 previous chords. Making a complex algorithm to select the chords (rather than doing so at random) would allow the music to have more rhythm and make more sense. 
+- Add more complexity to the chord selection process (for example, by using Machine Learning to select chords versus random selection)
+  - Improving the current design of the chord selection algorithm would help make the music more unique and entertaining than it is right now. As of now, the chords are selected randomly. Modern music does not do this; chords are carefully selected based on at least the 5-10 previous chords. Making a complex algorithm to select the chords (rather than doing so at random) would allow the music to have more rhythm and make more sense.
+  - On the other hand, randomly generated music could have some unintended benefits for artists and creators. Artists could use this random generation of music for inspiration for making contemporary/modern music rather than using the traditional approach of carefully selecting chords. We're open to any thoughts, suggestions, or ideas about this!
+ 
+Our code is available on Github and is available for use under the MIT License. We have also put in some .mat files of data so you can start creating music right away.
 
 # References
 Our references are listed [here](https://caitlincoffey.github.io/Movement-Synthesizer/references). This is not mentioned in our references, but we would like to thank the QEA teaching team for their help and support throughout this project!
