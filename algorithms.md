@@ -20,13 +20,13 @@ For the initial filtering of all 3 axes, a similar pattern is followed: first, w
 <br>
 <br>
 <br>
-We then set the sampling rate (Fs) to be 2,000 Hz, as this allows for a frequency range of -1,000 to 1,000 Hz, as the `max_frequency = Fs/2`. This allows for a broad selection of tones, while avoiding some higher, harsher tones, that some listeners have found unpleasant during the development of this product. 
+We then set the sampling rate (Fs) to be 2,000 Hz, as this allows for a frequency range of -1,000 to 1,000 Hz, as the `max_frequency = Fs/2`. This allows for a broad selection of tones, while avoiding some higher, harsher tones that some listeners have found to be unpleasant during the development of this product. 
 
 <br>
 
 <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft fs.png" height="204" width="259.333333">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft fs.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft fs.png" height="204" width="259.333333">
 
-<i>B) FFTs of accelerometer data plotted with the new frequencies corresponding to the increased sampling rate for all 3 axes</i>
+<i>B) FFTs of accelerometer data plotted with the new frequencies corresponding to the sampling rate of 2000 Hz for all 3 axes</i>
 <br>
 <br>
 <br>
