@@ -6,3 +6,4 @@
 4. “Music and Health.” Harvard Health, Harvard Health Publishing, July 2011, www.health.harvard.edu/staying-healthy/music-and-health.
 5. MathWorks. “Accelerometer.” *Help Center*, MathWorks, 2014, www.mathworks.com/help/supportpkg/android/ref/accelerometer.html. 
 6. Lazzaro, Martin Anthony. “What Makes Chords Sound Good?” *Science in Our World: Certainty and Controversy*, Penn State, 16 Sept. 2015, sites.psu.edu/siowfa15/2015/09/16/what-makes-chords-sound-good/. 
+7. Billauer, Eli. “Peakdet: Peak Detection Using MATLAB.” *Eli Billauer. Freelancing Electrical Engineer Since Year 2000.*, Billauer.co.il, 20 July 2012, www.billauer.co.il/peakdet.html. 
