@@ -77,7 +77,7 @@ For the x axis, the base note is determined by finding the remainder of the inde
 For the y and z axes, the frequencies are matched to the closest value for all octaves of three different notes. The three different notes are determined by the chord selection process below and are based off of the corresponding x frequency (the base note).
 
 <br>
-<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft tuned.png" height="204" width="259.333333">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft tuned.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft tuned.png" height="204" width="259.333333">
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft tuned.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft tuned.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft tuned.png" height="204" width="259.333333">
 <i> Tuned Frequencies with Sampling Rate of 2000 Hz for the x (left), y (middle), and z (right) axes. </i>
 <br>
 <br>
