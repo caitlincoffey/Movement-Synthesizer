@@ -54,6 +54,11 @@ Additionally, to encourage greater periods of movement, we based our total numbe
 <i>Side to Side Movement Captured from Smartphone Accelerometer Data</i>
 <br>
 <br>
+<img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca X axis fft.png" height="204" width="259.333333">  <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Y axis fft.png" height="204" width="259.333333"> <img src="https://caitlincoffey.github.io/Movement-Synthesizer/media/Maca Z axis fft.png" height="204" width="259.333333">
+
+<i>A) FFTs of accelerometer data for the x (left), y (middle), and z (right) axes. </i>
+<br>
+<br>
 <audio controls>
   
 <source src="https://caitlincoffey.github.io/Movement-Synthesizer/audio/x-axissidetoside.mp3" type="audio/mpeg">Oh no! Your browser does not support the <code>audio</code> code element! </audio> 
