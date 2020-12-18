@@ -158,7 +158,7 @@ An example of a classic dance is The Macarena Dance which involves movement arou
 </center>
 
 
-Although it might appear to be silly to use this example, standing is technically considered movement. Standing, as mentioned earlier, does provide some benefits to one's health \[[2](/Movement-Synthesizer/references)\]. Standing requires relatively little movement in comparison to the previous example. You can listen to the music generated below here!
+Although it might appear to be silly to use this example, standing is technically considered movement. Standing, as mentioned earlier, does provide some benefits to one's health \[[2](/Movement-Synthesizer/references)\]. Standing requires relatively little movement in comparison to the previous example. You can listen to the music generated below here! The movements from holding the phone itself causes the major difference in pitch. Some of the smaller differences come from the way chords are selected, which you can learn more about on our [Algorithm Development page](/Movement-Synthesizer/algorithms).
 
 <center>
 <audio controls>
